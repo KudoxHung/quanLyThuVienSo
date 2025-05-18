@@ -28,7 +28,7 @@ export const generateDocument = (data, unitID) => {
     var zip = new PizZip(content);
     var doc = new Docxtemplater(zip, {
       paragraphLoop: true,
-      linebreaks: true,
+      linebreaks: true
     });
     doc.setData(data);
     try {
@@ -36,10 +36,7 @@ export const generateDocument = (data, unitID) => {
     } catch (error) {
       function replaceErrors(key, value) {
         if (value instanceof Error) {
-          return Object.getOwnPropertyNames(value).reduce(function (
-            error,
-            key,
-          ) {
+          return Object.getOwnPropertyNames(value).reduce(function (error, key) {
             error[key] = value[key];
             return error;
           }, {});
@@ -62,8 +59,7 @@ export const generateDocument = (data, unitID) => {
     }
     var out = doc.getZip().generate({
       type: "blob",
-      mimeType:
-        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      mimeType: "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
     }); //Output the document using Data-URI
     saveAs(out, `TheThuVien-${data?.userCode}.docx`);
   });

@@ -8,7 +8,7 @@ export function useClock() {
     timer: moment().format("HH:mm:ss"),
     house: moment().format("HH"),
     minute: moment().format("mm"),
-    second: moment().format("ss"),
+    second: moment().format("ss")
   });
 
   useEffect(() => {

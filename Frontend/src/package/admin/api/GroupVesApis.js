@@ -32,5 +32,5 @@ export const GroupVesApis = {
   GetAllGroupVesByIdcategoryVes: (pageSize, pageNumber, IdCategoryVes) => {
     const url = `/GroupVes/GetAllGroupVesByIdcategoryVes?pageSize=${pageSize}&pageNumber=${pageNumber}&IdCategoryVes=${IdCategoryVes}`;
     return axiosClient.get(url);
-  },
+  }
 };

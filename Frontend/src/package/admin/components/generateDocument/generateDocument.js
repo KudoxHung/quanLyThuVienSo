@@ -14,7 +14,7 @@ export const generateDocument = (file, name, data, type = 0) => {
     var zip = new PizZip(content);
     var doc = new Docxtemplater(zip, {
       paragraphLoop: true,
-      linebreaks: true,
+      linebreaks: true
     });
     doc.setData(data);
     try {
@@ -22,10 +22,7 @@ export const generateDocument = (file, name, data, type = 0) => {
     } catch (error) {
       function replaceErrors(key, value) {
         if (value instanceof Error) {
-          return Object.getOwnPropertyNames(value).reduce(function (
-            error,
-            key,
-          ) {
+          return Object.getOwnPropertyNames(value).reduce(function (error, key) {
             error[key] = value[key];
             return error;
           }, {});
@@ -56,14 +53,13 @@ export const generateDocument = (file, name, data, type = 0) => {
     if (type === 0) {
       out = doc.getZip().generate({
         type: "blob",
-        mimeType:
-          "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        mimeType: "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
       });
       saveAs(out, name);
       // resolve(null); // Không trả về dữ liệu trong chế độ download.
     } else {
       out = doc.getZip().generate({
-        type: "uint8array",
+        type: "uint8array"
       }); // Trả về dưới dạng Uint8Array
       return out;
     }

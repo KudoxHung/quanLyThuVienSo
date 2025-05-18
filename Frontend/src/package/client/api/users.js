@@ -6,12 +6,12 @@ export const usersClient = {
   },
   changePassword: async (email, oldPassword, newPassword) => {
     return await axiosClient.post(
-      `/User/ChangePassWord?email=${email}&oldPassword=${oldPassword}&newPassword=${newPassword}`,
+      `/User/ChangePassWord?email=${email}&oldPassword=${oldPassword}&newPassword=${newPassword}`
     );
-  },
+  }
 };
 export const users = {
   getUser: async () => {
     return await axiosClient.get("/User/GetUser");
-  },
+  }
 };

@@ -38,23 +38,15 @@ export const receipt = {
     return await axiosClient.post("/Receipt/UpdateReceiptExportBooks", data);
   },
   exportBooksToWord: async (id, type) => {
-    return await axiosClient.get(
-      `/Receipt/ExportBooksToWord?id=${id}&typeExport=${type}`,
-      {
-        responseType: "blob",
-      },
-    );
+    return await axiosClient.get(`/Receipt/ExportBooksToWord?id=${id}&typeExport=${type}`, {
+      responseType: "blob"
+    });
   },
-  GetListBookToReceiptExportBooks: (
-    filter,
-    IdDocumentType,
-    pageSize,
-    pageNumber,
-  ) => {
+  GetListBookToReceiptExportBooks: (filter, IdDocumentType, pageSize, pageNumber) => {
     const url = `/Receipt/GetListBookToReceiptExportBooks?filter=${filter}&IdDocumentType=${IdDocumentType}&pageSize=${pageSize}&pageNumber=${pageNumber}`;
     return axiosClient.get(url);
   },
   ConfirmExportBooks: async (id) => {
     return await axiosClient.get(`/Receipt/ConfirmExportBooks?idReceipt=${id}`);
-  },
+  }
 };

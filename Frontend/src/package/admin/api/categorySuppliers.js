@@ -15,5 +15,5 @@ export const categorySuppliers = {
   },
   delete: async (id) => {
     return await axiosClient.delete(`/CategorySuppliers/${id}`);
-  },
+  }
 };

@@ -14,20 +14,10 @@ function ErrorFallback({ error, resetErrorBoundary }) {
         <Card bordered={false} className="criclebox h-full">
           <Row>
             <Col xs={24} sm={24} md={24} lg={12} xl={12}>
-              <Space
-                direction="vertical"
-                style={{ width: "100%" }}
-                align="center"
-              >
-                <Typography.Title level={3}>
-                  Oops ! Có gì đó không ổn.
-                </Typography.Title>
-                <Typography.Text strong>
-                  Đừng lo lắng, chúng tôi sẽ xử lý nhanh nhất cho bạn.
-                </Typography.Text>
-                <Typography.Paragraph type="danger">
-                  {error.message}
-                </Typography.Paragraph>
+              <Space direction="vertical" style={{ width: "100%" }} align="center">
+                <Typography.Title level={3}>Oops ! Có gì đó không ổn.</Typography.Title>
+                <Typography.Text strong>Đừng lo lắng, chúng tôi sẽ xử lý nhanh nhất cho bạn.</Typography.Text>
+                <Typography.Paragraph type="danger">{error.message}</Typography.Paragraph>
                 <Button
                   icon={<ToolOutlined />}
                   onClick={() => {
@@ -51,6 +41,6 @@ function ErrorFallback({ error, resetErrorBoundary }) {
 }
 export default function WithErrorBoundaryCustom(components) {
   return withErrorBoundary(components, {
-    FallbackComponent: ErrorFallback,
+    FallbackComponent: ErrorFallback
   });
 }

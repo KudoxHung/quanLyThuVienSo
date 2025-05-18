@@ -1,16 +1,5 @@
 function readGroup(group) {
-  let readDigit = [
-    " Không",
-    " Một",
-    " Hai",
-    " Ba",
-    " Bốn",
-    " Năm",
-    " Sáu",
-    " Bảy",
-    " Tám",
-    " Chín",
-  ];
+  let readDigit = [" Không", " Một", " Hai", " Ba", " Bốn", " Năm", " Sáu", " Bảy", " Tám", " Chín"];
   var temp = "";
   if (group === "000") return "";
   temp = readDigit[parseInt(group.substring(0, 1))] + " Trăm";
@@ -22,8 +11,7 @@ function readGroup(group) {
     }
   else temp += readDigit[parseInt(group.substring(1, 2))] + " Mươi";
   if (group.substring(2, 3) === "5") temp += " Lăm";
-  else if (group.substring(2, 3) !== "0")
-    temp += readDigit[parseInt(group.substring(2, 3))];
+  else if (group.substring(2, 3) !== "0") temp += readDigit[parseInt(group.substring(2, 3))];
   return temp;
 }
 
@@ -74,7 +62,6 @@ export function readMoney(num) {
   temp = temp.trim();
   temp = temp.replaceAll("Mươi Một", "Mươi Mốt");
   temp = temp.trim();
-  let result =
-    temp.substring(0, 1).toUpperCase() + temp.substring(1).toLowerCase();
+  let result = temp.substring(0, 1).toUpperCase() + temp.substring(1).toLowerCase();
   return (result === "" ? "Không" : result) + " đồng chẵn";
 }

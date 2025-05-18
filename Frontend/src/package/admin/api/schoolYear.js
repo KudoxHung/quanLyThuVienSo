@@ -2,9 +2,7 @@ import axiosClient from "./axiosClient";
 
 export const schoolYear = {
   getAll: async (pageSize, pageNumber) => {
-    return await axiosClient.get(
-      `/SchoolYear/GetAllSchoolYear?pageSize=${pageSize}&pageNumber=${pageNumber}`,
-    );
+    return await axiosClient.get(`/SchoolYear/GetAllSchoolYear?pageSize=${pageSize}&pageNumber=${pageNumber}`);
   },
   create: async (restDay) => {
     return await axiosClient.post("/SchoolYear/InsertSchoolYear", restDay);
@@ -19,8 +17,6 @@ export const schoolYear = {
     return await axiosClient.get(`/SchoolYear/GetSchoolYearById?id=${id}`);
   },
   active: async (id, isActive) => {
-    return await axiosClient.post(
-      `/SchoolYear/ActiveSchoolYear?id=${id}&IsActive=${isActive}`,
-    );
-  },
+    return await axiosClient.post(`/SchoolYear/ActiveSchoolYear?id=${id}&IsActive=${isActive}`);
+  }
 };

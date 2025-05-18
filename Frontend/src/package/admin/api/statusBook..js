@@ -18,25 +18,18 @@ export const statusBook = {
     return axiosClient.get(url);
   },
   getAllNotPagination: async () => {
-    return await axiosClient.get(
-      `/StatusBook/GetAllListStatusBookNotPagination`,
-    );
+    return await axiosClient.get(`/StatusBook/GetAllListStatusBookNotPagination`);
   },
   getById: async (idStatusBook) => {
-    return await axiosClient.get(
-      `/StatusBook/getStatusBookById?idStatusBook=${idStatusBook}`,
-    );
+    return await axiosClient.get(`/StatusBook/getStatusBookById?idStatusBook=${idStatusBook}`);
   },
   insert: async (statusBook) => {
     return await axiosClient.post(`/StatusBook/insertStatusBook`, statusBook);
   },
   delete: async (statusBook) => {
-    return await axiosClient.post(
-      `/StatusBook/deleteStatusBookById`,
-      statusBook,
-    );
+    return await axiosClient.post(`/StatusBook/deleteStatusBookById`, statusBook);
   },
   update: async (statusBook) => {
     return await axiosClient.post(`/StatusBook/updateStatusBook`, statusBook);
-  },
+  }
 };

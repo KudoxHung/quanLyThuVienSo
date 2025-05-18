@@ -7,8 +7,8 @@ const axiosClient = axios.create({
   baseURL: `${apiUrl}/api`,
   headers: {
     "content-type": "application/json",
-    Authorization: `Bearer ${getCookie("jwt")}`,
-  },
+    Authorization: `Bearer ${getCookie("jwt")}`
+  }
 });
 
 // Add a request interceptor
@@ -18,7 +18,7 @@ axiosClient.interceptors.request.use(
   },
   function (error) {
     return Promise.reject(error);
-  },
+  }
 );
 
 // Add a response interceptor
@@ -28,7 +28,7 @@ axiosClient.interceptors.response.use(
   },
   function (error) {
     return Promise.reject(error);
-  },
+  }
 );
 
 export default axiosClient;

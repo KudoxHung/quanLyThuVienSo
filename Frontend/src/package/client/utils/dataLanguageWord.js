@@ -1,548 +1,548 @@
 export const dataLanguageWord = [
   {
-    name: "Abkhaz",
+    name: "Abkhaz"
   },
   {
-    name: "Afar",
+    name: "Afar"
   },
   {
-    name: "Afrikaans",
+    name: "Afrikaans"
   },
   {
-    name: "Akan",
+    name: "Akan"
   },
   {
-    name: "Albanian",
+    name: "Albanian"
   },
   {
-    name: "Amharic",
+    name: "Amharic"
   },
   {
-    name: "Arabic",
+    name: "Arabic"
   },
   {
-    name: "Aragonese",
+    name: "Aragonese"
   },
   {
-    name: "Armenian",
+    name: "Armenian"
   },
   {
-    name: "Assamese",
+    name: "Assamese"
   },
   {
-    name: "Avaric",
+    name: "Avaric"
   },
   {
-    name: "Avestan",
+    name: "Avestan"
   },
   {
-    name: "Aymara",
+    name: "Aymara"
   },
   {
-    name: "Azerbaijani",
+    name: "Azerbaijani"
   },
   {
-    name: "Bambara",
+    name: "Bambara"
   },
   {
-    name: "Bashkir",
+    name: "Bashkir"
   },
   {
-    name: "Basque",
+    name: "Basque"
   },
   {
-    name: "Belarusian",
+    name: "Belarusian"
   },
   {
-    name: "Bengali",
+    name: "Bengali"
   },
   {
-    name: "Bihari",
+    name: "Bihari"
   },
   {
-    name: "Bislama",
+    name: "Bislama"
   },
   {
-    name: "Bosnian",
+    name: "Bosnian"
   },
   {
-    name: "Breton",
+    name: "Breton"
   },
   {
-    name: "Bulgarian",
+    name: "Bulgarian"
   },
   {
-    name: "Burmese",
+    name: "Burmese"
   },
   {
-    name: "Catalan; Valencian",
+    name: "Catalan; Valencian"
   },
   {
-    name: "Chamorro",
+    name: "Chamorro"
   },
   {
-    name: "Chechen",
+    name: "Chechen"
   },
   {
-    name: "Chichewa; Chewa; Nyanja",
+    name: "Chichewa; Chewa; Nyanja"
   },
   {
-    name: "Chinese",
+    name: "Chinese"
   },
   {
-    name: "Chuvash",
+    name: "Chuvash"
   },
   {
-    name: "Cornish",
+    name: "Cornish"
   },
   {
-    name: "Corsican",
+    name: "Corsican"
   },
   {
-    name: "Cree",
+    name: "Cree"
   },
   {
-    name: "Croatian",
+    name: "Croatian"
   },
   {
-    name: "Czech",
+    name: "Czech"
   },
   {
-    name: "Danish",
+    name: "Danish"
   },
   {
-    name: "Divehi; Dhivehi; Maldivian;",
+    name: "Divehi; Dhivehi; Maldivian;"
   },
   {
-    name: "Dutch",
+    name: "Dutch"
   },
   {
-    name: "English",
+    name: "English"
   },
   {
-    name: "Esperanto",
+    name: "Esperanto"
   },
   {
-    name: "Estonian",
+    name: "Estonian"
   },
   {
-    name: "Ewe",
+    name: "Ewe"
   },
   {
-    name: "Faroese",
+    name: "Faroese"
   },
   {
-    name: "Fijian",
+    name: "Fijian"
   },
   {
-    name: "Finnish",
+    name: "Finnish"
   },
   {
-    name: "French",
+    name: "French"
   },
   {
-    name: "Fula; Fulah; Pulaar; Pular",
+    name: "Fula; Fulah; Pulaar; Pular"
   },
   {
-    name: "Galician",
+    name: "Galician"
   },
   {
-    name: "Georgian",
+    name: "Georgian"
   },
   {
-    name: "German",
+    name: "German"
   },
   {
-    name: "Greek, Modern",
+    name: "Greek, Modern"
   },
   {
-    name: "Guaraní",
+    name: "Guaraní"
   },
   {
-    name: "Gujarati",
+    name: "Gujarati"
   },
   {
-    name: "Haitian; Haitian Creole",
+    name: "Haitian; Haitian Creole"
   },
   {
-    name: "Hausa",
+    name: "Hausa"
   },
   {
-    name: "Hebrew (modern)",
+    name: "Hebrew (modern)"
   },
   {
-    name: "Herero",
+    name: "Herero"
   },
   {
-    name: "Hindi",
+    name: "Hindi"
   },
   {
-    name: "Hiri Motu",
+    name: "Hiri Motu"
   },
   {
-    name: "Hungarian",
+    name: "Hungarian"
   },
   {
-    name: "Interlingua",
+    name: "Interlingua"
   },
   {
-    name: "Indonesian",
+    name: "Indonesian"
   },
   {
-    name: "Interlingue",
+    name: "Interlingue"
   },
   {
-    name: "Irish",
+    name: "Irish"
   },
   {
-    name: "Igbo",
+    name: "Igbo"
   },
   {
-    name: "Inupiaq",
+    name: "Inupiaq"
   },
   {
-    name: "Ido",
+    name: "Ido"
   },
   {
-    name: "Icelandic",
+    name: "Icelandic"
   },
   {
-    name: "Italian",
+    name: "Italian"
   },
   {
-    name: "Inuktitut",
+    name: "Inuktitut"
   },
   {
-    name: "Japanese",
+    name: "Japanese"
   },
   {
-    name: "Javanese",
+    name: "Javanese"
   },
   {
-    name: "Kalaallisut, Greenlandic",
+    name: "Kalaallisut, Greenlandic"
   },
   {
-    name: "Kannada",
+    name: "Kannada"
   },
   {
-    name: "Kanuri",
+    name: "Kanuri"
   },
   {
-    name: "Kashmiri",
+    name: "Kashmiri"
   },
   {
-    name: "Kazakh",
+    name: "Kazakh"
   },
   {
-    name: "Khmer",
+    name: "Khmer"
   },
   {
-    name: "Kikuyu, Gikuyu",
+    name: "Kikuyu, Gikuyu"
   },
   {
-    name: "Kinyarwanda",
+    name: "Kinyarwanda"
   },
   {
-    name: "Kirghiz, Kyrgyz",
+    name: "Kirghiz, Kyrgyz"
   },
   {
-    name: "Komi",
+    name: "Komi"
   },
   {
-    name: "Kongo",
+    name: "Kongo"
   },
   {
-    name: "Korean",
+    name: "Korean"
   },
   {
-    name: "Kurdish",
+    name: "Kurdish"
   },
   {
-    name: "Kwanyama, Kuanyama",
+    name: "Kwanyama, Kuanyama"
   },
   {
-    name: "Latin",
+    name: "Latin"
   },
   {
-    name: "Luxembourgish, Letzeburgesch",
+    name: "Luxembourgish, Letzeburgesch"
   },
   {
-    name: "Luganda",
+    name: "Luganda"
   },
   {
-    name: "Limburgish, Limburgan, Limburger",
+    name: "Limburgish, Limburgan, Limburger"
   },
   {
-    name: "Lingala",
+    name: "Lingala"
   },
   {
-    name: "Lao",
+    name: "Lao"
   },
   {
-    name: "Lithuanian",
+    name: "Lithuanian"
   },
   {
-    name: "Luba-Katanga",
+    name: "Luba-Katanga"
   },
   {
-    name: "Latvian",
+    name: "Latvian"
   },
   {
-    name: "Manx",
+    name: "Manx"
   },
   {
-    name: "Macedonian",
+    name: "Macedonian"
   },
   {
-    name: "Malagasy",
+    name: "Malagasy"
   },
   {
-    name: "Malay",
+    name: "Malay"
   },
   {
-    name: "Malayalam",
+    name: "Malayalam"
   },
   {
-    name: "Maltese",
+    name: "Maltese"
   },
   {
-    name: "Māori",
+    name: "Māori"
   },
   {
-    name: "Marathi (Marāṭhī)",
+    name: "Marathi (Marāṭhī)"
   },
   {
-    name: "Marshallese",
+    name: "Marshallese"
   },
   {
-    name: "Mongolian",
+    name: "Mongolian"
   },
   {
-    name: "Nauru",
+    name: "Nauru"
   },
   {
-    name: "Navajo, Navaho",
+    name: "Navajo, Navaho"
   },
   {
-    name: "Norwegian Bokmål",
+    name: "Norwegian Bokmål"
   },
   {
-    name: "North Ndebele",
+    name: "North Ndebele"
   },
   {
-    name: "Nepali",
+    name: "Nepali"
   },
   {
-    name: "Ndonga",
+    name: "Ndonga"
   },
   {
-    name: "Norwegian Nynorsk",
+    name: "Norwegian Nynorsk"
   },
   {
-    name: "Norwegian",
+    name: "Norwegian"
   },
   {
-    name: "Nuosu",
+    name: "Nuosu"
   },
   {
-    name: "South Ndebele",
+    name: "South Ndebele"
   },
   {
-    name: "Occitan",
+    name: "Occitan"
   },
   {
-    name: "Ojibwe, Ojibwa",
+    name: "Ojibwe, Ojibwa"
   },
   {
-    name: "Old Church Slavonic, Church Slavic, Church Slavonic, Old Bulgarian, Old Slavonic",
+    name: "Old Church Slavonic, Church Slavic, Church Slavonic, Old Bulgarian, Old Slavonic"
   },
   {
-    name: "Oromo",
+    name: "Oromo"
   },
   {
-    name: "Oriya",
+    name: "Oriya"
   },
   {
-    name: "Ossetian, Ossetic",
+    name: "Ossetian, Ossetic"
   },
   {
-    name: "Panjabi, Punjabi",
+    name: "Panjabi, Punjabi"
   },
   {
-    name: "Pāli",
+    name: "Pāli"
   },
   {
-    name: "Persian",
+    name: "Persian"
   },
   {
-    name: "Polish",
+    name: "Polish"
   },
   {
-    name: "Pashto, Pushto",
+    name: "Pashto, Pushto"
   },
   {
-    name: "Portuguese",
+    name: "Portuguese"
   },
   {
-    name: "Quechua",
+    name: "Quechua"
   },
   {
-    name: "Romansh",
+    name: "Romansh"
   },
   {
-    name: "Kirundi",
+    name: "Kirundi"
   },
   {
-    name: "Romanian, Moldavian, Moldovan",
+    name: "Romanian, Moldavian, Moldovan"
   },
   {
-    name: "Russian",
+    name: "Russian"
   },
   {
-    name: "Sanskrit (Saṁskṛta)",
+    name: "Sanskrit (Saṁskṛta)"
   },
   {
-    name: "Sardinian",
+    name: "Sardinian"
   },
   {
-    name: "Sindhi",
+    name: "Sindhi"
   },
   {
-    name: "Northern Sami",
+    name: "Northern Sami"
   },
   {
-    name: "Samoan",
+    name: "Samoan"
   },
   {
-    name: "Sango",
+    name: "Sango"
   },
   {
-    name: "Serbian",
+    name: "Serbian"
   },
   {
-    name: "Scottish Gaelic; Gaelic",
+    name: "Scottish Gaelic; Gaelic"
   },
   {
-    name: "Shona",
+    name: "Shona"
   },
   {
-    name: "Sinhala, Sinhalese",
+    name: "Sinhala, Sinhalese"
   },
   {
-    name: "Slovak",
+    name: "Slovak"
   },
   {
-    name: "Slovene",
+    name: "Slovene"
   },
   {
-    name: "Somali",
+    name: "Somali"
   },
   {
-    name: "Southern Sotho",
+    name: "Southern Sotho"
   },
   {
-    name: "Spanish; Castilian",
+    name: "Spanish; Castilian"
   },
   {
-    name: "Sundanese",
+    name: "Sundanese"
   },
   {
-    name: "Swahili",
+    name: "Swahili"
   },
   {
-    name: "Swati",
+    name: "Swati"
   },
   {
-    name: "Swedish",
+    name: "Swedish"
   },
   {
-    name: "Tamil",
+    name: "Tamil"
   },
   {
-    name: "Telugu",
+    name: "Telugu"
   },
   {
-    name: "Tajik",
+    name: "Tajik"
   },
   {
-    name: "Thai",
+    name: "Thai"
   },
   {
-    name: "Tigrinya",
+    name: "Tigrinya"
   },
   {
-    name: "Tibetan Standard, Tibetan, Central",
+    name: "Tibetan Standard, Tibetan, Central"
   },
   {
-    name: "Turkmen",
+    name: "Turkmen"
   },
   {
-    name: "Tagalog",
+    name: "Tagalog"
   },
   {
-    name: "Tswana",
+    name: "Tswana"
   },
   {
-    name: "Tonga (Tonga Islands)",
+    name: "Tonga (Tonga Islands)"
   },
   {
-    name: "Turkish",
+    name: "Turkish"
   },
   {
-    name: "Tsonga",
+    name: "Tsonga"
   },
   {
-    name: "Tatar",
+    name: "Tatar"
   },
   {
-    name: "Twi",
+    name: "Twi"
   },
   {
-    name: "Tahitian",
+    name: "Tahitian"
   },
   {
-    name: "Uighur, Uyghur",
+    name: "Uighur, Uyghur"
   },
   {
-    name: "Ukrainian",
+    name: "Ukrainian"
   },
   {
-    name: "Urdu",
+    name: "Urdu"
   },
   {
-    name: "Uzbek",
+    name: "Uzbek"
   },
   {
-    name: "Venda",
+    name: "Venda"
   },
   {
-    name: "Tiếng Việt",
+    name: "Tiếng Việt"
   },
   {
-    name: "Volapük",
+    name: "Volapük"
   },
   {
-    name: "Walloon",
+    name: "Walloon"
   },
   {
-    name: "Welsh",
+    name: "Welsh"
   },
   {
-    name: "Wolof",
+    name: "Wolof"
   },
   {
-    name: "Western Frisian",
+    name: "Western Frisian"
   },
   {
-    name: "Xhosa",
+    name: "Xhosa"
   },
   {
-    name: "Yiddish",
+    name: "Yiddish"
   },
   {
-    name: "Yoruba",
+    name: "Yoruba"
   },
   {
-    name: "Zhuang, Chuang",
-  },
+    name: "Zhuang, Chuang"
+  }
 ];

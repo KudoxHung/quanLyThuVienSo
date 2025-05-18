@@ -5,35 +5,23 @@ export const categorySignV1 = {
     return await axiosClient.get(`/CategorySign_V1/GetCategorySignWithPage`);
   },
   readById: async (id) => {
-    return await axiosClient.get(
-      `/CategorySign_V1/GetCategorySignById?id=${id}`,
-    );
+    return await axiosClient.get(`/CategorySign_V1/GetCategorySignById?id=${id}`);
   },
   create: async (categorySign) => {
-    return await axiosClient.post(
-      `/CategorySign_V1/InsertCategory`,
-      categorySign,
-    );
+    return await axiosClient.post(`/CategorySign_V1/InsertCategory`, categorySign);
   },
   update: async (categorySign) => {
-    return await axiosClient.post(
-      `/CategorySign_V1/UpdateCategorySign`,
-      categorySign,
-    );
+    return await axiosClient.post(`/CategorySign_V1/UpdateCategorySign`, categorySign);
   },
   delete: async (id) => {
-    return await axiosClient.post(
-      `/CategorySign_V1/DeleteCategoryByID?id=${id}`,
-    );
+    return await axiosClient.post(`/CategorySign_V1/DeleteCategoryByID?id=${id}`);
   },
   GetFileExcelCategorySign: async () => {
     return await axiosClient.get(`/CategorySign_V1/GetFileExcelCategorySign`, {
-      responseType: "blob",
+      responseType: "blob"
     });
   },
   hided: async (id, check) => {
-    return await axiosClient.post(
-      `/CategorySign_V1/HideCategoryById?id=${id}&check=${check}`,
-    );
-  },
+    return await axiosClient.post(`/CategorySign_V1/HideCategoryById?id=${id}&check=${check}`);
+  }
 };

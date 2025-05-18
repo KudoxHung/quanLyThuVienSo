@@ -113,10 +113,7 @@ function App() {
   useEffect(() => {
     if (count === 3) {
       deleteCookie("jwt");
-      openNotificationWithIcon(
-        "warning",
-        "Đã có lỗi xảy ra, vui lòng đăng nhập lại, để đảm bảo an toàn dữ liệu."
-      );
+      openNotificationWithIcon("warning", "Đã có lỗi xảy ra, vui lòng đăng nhập lại, để đảm bảo an toàn dữ liệu.");
     } else {
       users
         .getAllUserRole()
@@ -156,9 +153,7 @@ function App() {
   }, [path, allRole, Users, navigate]);
   return (
     <Fragment>
-      {path.pathname.includes("/admin") ||
-      path.pathname === "/cp" ||
-      path.pathname.includes("/Print") ? (
+      {path.pathname.includes("/admin") || path.pathname === "/cp" || path.pathname.includes("/Print") ? (
         <Admin />
       ) : (
         <Client />

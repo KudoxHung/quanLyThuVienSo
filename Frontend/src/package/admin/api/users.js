@@ -5,15 +5,10 @@ export const users = {
     return await axiosClient.get(`/User/getVersion`);
   },
   ChangePasswordAllUserByUnit: async (IdUnit) => {
-    return await axiosClient.get(
-      `/User/ChangePasswordAllUserByUnit?IdUnit=${IdUnit}`,
-    );
+    return await axiosClient.get(`/User/ChangePasswordAllUserByUnit?IdUnit=${IdUnit}`);
   },
   ChangePasswordAllUserByListUser: async (ListIdUser) => {
-    return await axiosClient.post(
-      `/User/ChangePasswordAllUserByListUser`,
-      ListIdUser,
-    );
+    return await axiosClient.post(`/User/ChangePasswordAllUserByListUser`, ListIdUser);
   },
 
   getUsers: async () => {
@@ -23,19 +18,13 @@ export const users = {
     return await axiosClient.post("/User/GetListUser", { ...user });
   },
   getAllUsers: async (pageSize, pageNumber = 10) => {
-    return await axiosClient.get(
-      `/User/GetAllUser?pageNumber=${pageNumber}&pageSize=${pageSize}`,
-    );
+    return await axiosClient.get(`/User/GetAllUser?pageNumber=${pageNumber}&pageSize=${pageSize}`);
   },
   getAllUsersNotInDocumentInvoice: async (pageSize, pageNumber = 10) => {
-    return await axiosClient.get(
-      `/User/GetAllUsersNotInDocumentInvoice?pageNumber=${pageNumber}&pageSize=${pageSize}`,
-    );
+    return await axiosClient.get(`/User/GetAllUsersNotInDocumentInvoice?pageNumber=${pageNumber}&pageSize=${pageSize}`);
   },
   getAllUsersNotBlock: async (pageSize, pageNumber = 10) => {
-    return await axiosClient.get(
-      `/User/GetAllUserNotBlocked?pageNumber=${pageNumber}&pageSize=${pageSize}`,
-    );
+    return await axiosClient.get(`/User/GetAllUserNotBlocked?pageNumber=${pageNumber}&pageSize=${pageSize}`);
   },
   getUserById: async (id) => {
     return await axiosClient.get(`/User/GetUserById?Id=${id}`);
@@ -43,17 +32,15 @@ export const users = {
   addUser: async (user) => {
     return await axiosClient.post("/User/InsertUser", user, {
       headers: {
-        "Content-Type": "multipart/form-data",
-      },
+        "Content-Type": "multipart/form-data"
+      }
     });
   },
   removeUser: async (id) => {
     return await axiosClient.post(`/User/RemoveUser?Id=${id}`);
   },
   blockAccountUser: async (id, isLock) => {
-    return await axiosClient.post(
-      `/User/LockUserAccount?Id=${id}&&isLock=${isLock}`,
-    );
+    return await axiosClient.post(`/User/LockUserAccount?Id=${id}&&isLock=${isLock}`);
   },
   deleteUserRole: async (id) => {
     return await axiosClient.post(`/User/DeleteUserRole?Id=${id}`);
@@ -61,8 +48,8 @@ export const users = {
   updateUser: async (user) => {
     return await axiosClient.post(`/User/UpdateUser`, user, {
       headers: {
-        "Content-Type": "multipart/form-data",
-      },
+        "Content-Type": "multipart/form-data"
+      }
     });
   },
   addRoleUser: async (idRole, idUser) => {
@@ -78,18 +65,16 @@ export const users = {
     return await axiosClient.get(`/User/GetAllUnit`);
   },
   activeUserByCode: async (email, code) => {
-    return await axiosClient.post(
-      `/User/ActiveUserByCode?email=${email}&code=${code}`,
-    );
+    return await axiosClient.post(`/User/ActiveUserByCode?email=${email}&code=${code}`);
   },
   InsertUserByExcel: async (file) => {
     return await axiosClient.post(`/User/InsertUserByExcel`, file, {
-      responseType: "blob",
+      responseType: "blob"
     });
   },
   GetFileExcelImportExcel: async () => {
     return await axiosClient.get(`/User/GetFileExcelImportExcel`, {
-      responseType: "blob",
+      responseType: "blob"
     });
   },
   GetListRoleOfUser: async (idUser) => {
@@ -102,26 +87,21 @@ export const users = {
     return await axiosClient.post(`/User/DeleteUserRole`, { idRole, idUser });
   },
   ForgotPassWord: async (email, newPassword) => {
-    return await axiosClient.post(
-      `/User/ForgotPassWord?email=${email}&newPassword=${newPassword}`,
-    );
+    return await axiosClient.post(`/User/ForgotPassWord?email=${email}&newPassword=${newPassword}`);
   },
   UpdateImageUsers: async (lstIdUser) => {
     return await axiosClient.post(`/User/UpdateImageUsers`, lstIdUser, {
       headers: {
-        "Content-Type": "multipart/form-data",
-      },
+        "Content-Type": "multipart/form-data"
+      }
     });
   },
   GetFileExcelUserByIdUnit: async (idUnit) => {
-    return await axiosClient.get(
-      `/User/GetFileExcelUserByIdUnit?idUnit=${idUnit}`,
-      { responseType: "blob" },
-    );
+    return await axiosClient.get(`/User/GetFileExcelUserByIdUnit?idUnit=${idUnit}`, { responseType: "blob" });
   },
   UpdateActiveAndExpireDateUser: async (file) => {
     return await axiosClient.post(`/User/UpdateActiveAndExpireDateUser`, file, {
-      responseType: "blob",
+      responseType: "blob"
     });
   },
   UpdateUserExpireDateByUnit: async (value) => {
@@ -132,13 +112,13 @@ export const users = {
   },
   GetAllUserByIdUnit: async (idUnit, pageSize, pageNumber) => {
     return await axiosClient.get(
-      `/User/GetAllUserByIdUnit?idUnit=${idUnit}&pageSize=${pageSize}&pageNumber=${pageNumber}`,
+      `/User/GetAllUserByIdUnit?idUnit=${idUnit}&pageSize=${pageSize}&pageNumber=${pageNumber}`
     );
   },
   UpdateListUserByIdUnit: async (idUser, idUnit) => {
     return await axiosClient.put(`/User/UpdateListUserByIdUnit`, {
       idUser,
-      idUnit,
+      idUnit
     });
-  },
+  }
 };

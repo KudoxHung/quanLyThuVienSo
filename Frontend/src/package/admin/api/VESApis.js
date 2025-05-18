@@ -52,5 +52,5 @@ export const VESApis = {
   GetAllCategoryVesByVesSound: (pageSize, pageNumber) => {
     const url = `/VES/GetAllCategoryVesByVesSound?pageSize=${pageSize}&pageNumber=${pageNumber}`;
     return axiosClient.get(url);
-  },
+  }
 };

@@ -2,12 +2,7 @@
 import axiosClient from "./axiosClient";
 
 export const auditReceipt = {
-  GetAllAuditReceipt: (
-    pageSize,
-    pageNumber,
-    reportCreateDate,
-    reportToDate,
-  ) => {
+  GetAllAuditReceipt: (pageSize, pageNumber, reportCreateDate, reportToDate) => {
     const url = `/AuditReceipt/GetAllAuditReceipt?pageSize=${pageSize}&pageNumber=${pageNumber}&reportCreateDate=${reportCreateDate}&reportToDate=${reportToDate}`;
     return axiosClient.get(url);
   },
@@ -62,5 +57,5 @@ export const auditReceipt = {
   GetAuditReceiptByIdForLiquid: (IdAuditReceipt) => {
     const url = `/AuditReceipt/GetAuditReceiptByIdForLiquid?IdAuditReceipt=${IdAuditReceipt}`;
     return axiosClient.get(url);
-  },
+  }
 };

@@ -40,5 +40,5 @@ export const CategoryVesApis = {
   GetAllCategoryVesBySound: (pageSize, pageNumber) => {
     const url = `/CategoryVes/GetAllCategoryVesBySound?pageSize=${pageSize}&pageNumber=${pageNumber}`;
     return axiosClient.get(url);
-  },
+  }
 };
