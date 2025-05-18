@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DigitalLibary.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f51c150e34516b804f3c4118376c66b7c06f288e")]
 [assembly: System.Reflection.AssemblyProductAttribute("DigitalLibary.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DigitalLibary.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
