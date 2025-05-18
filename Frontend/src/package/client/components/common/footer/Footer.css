@@ -1,0 +1,15 @@
+.footer {
+  /* margin-top: 50px; */
+  /* footer an cho bottom */
+  position: static;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+.footer-title {
+  font-weight: bold;
+  text-transform: uppercase;
+
+  transform: translate(10px, 10px);
+}

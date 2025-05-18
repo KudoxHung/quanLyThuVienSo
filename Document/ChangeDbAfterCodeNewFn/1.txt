@@ -1,0 +1,9 @@
+1. Thêm role mới mã màu vào bảng Role
+aee5537b-7934-4345-a803-f0d8ef431f90	Mã màu	0	False
+2. cập nhật bảng Role_User dùng Id của ADMIN và ID role mới
+// cập nhật menu tình trạng sách
+3. Thêm role mới danh mục tình trạng sách vào bảng Role
+aee5537b-7934-4345-a803-f0d8ef431f91	Tình trạng sách	0	False
+Cập nhật ngày 29/06/2024
+4. cập nhật bảng Role_User dùng Id của ADMIN và ID role mới
+5. Cập nhật thêm cột RecordBookDate (DateTime) vào Receipt

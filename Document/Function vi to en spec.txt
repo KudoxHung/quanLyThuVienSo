@@ -1,0 +1,98 @@
+USE [ThuVienSo_Note]
+GO
+
+/****** Object:  UserDefinedFunction [dbo].[vi_to_en_spec]    Script Date: 09/04/2024 12:08:29 SA ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE FUNCTION [dbo].[vi_to_en_spec]
+(
+    @s NVARCHAR(255)
+)
+RETURNS NVARCHAR(255)
+AS
+BEGIN
+    DECLARE @s_en NVARCHAR(255);
+
+    -- Convert input string to lowercase
+    SET @s = LOWER(@s);
+
+    -- Perform replacements
+    SET @s_en = REPLACE(@s,'à','a');
+    SET @s_en = REPLACE(@s_en,N'á','a');
+    SET @s_en = REPLACE(@s_en,N'ạ','a');
+    SET @s_en = REPLACE(@s_en,N'ả','a');
+    SET @s_en = REPLACE(@s_en,N'ạ','a');
+    SET @s_en = REPLACE(@s_en,N'ã','a');
+    SET @s_en = REPLACE(@s_en,N'ầ','â');
+    SET @s_en = REPLACE(@s_en,N'ấ','â');
+    SET @s_en = REPLACE(@s_en,N'ậ','â');
+    SET @s_en = REPLACE(@s_en,N'ẩ','â');
+    SET @s_en = REPLACE(@s_en,N'ẫ','â');
+    SET @s_en = REPLACE(@s_en,N'ằ','ă');
+    SET @s_en = REPLACE(@s_en,N'ắ','ă');
+    SET @s_en = REPLACE(@s_en,N'ặ','ă');
+    SET @s_en = REPLACE(@s_en,N'ẳ','ă');
+    SET @s_en = REPLACE(@s_en,N'ẵ','ă');
+
+    SET @s_en = REPLACE(@s_en,N'è','e');
+    SET @s_en = REPLACE(@s_en,N'é','e');
+    SET @s_en = REPLACE(@s_en,N'ẹ','e');
+    SET @s_en = REPLACE(@s_en,N'ẻ','e');
+    SET @s_en = REPLACE(@s_en,N'ẽ','e');
+    SET @s_en = REPLACE(@s_en,N'ề','ê');
+    SET @s_en = REPLACE(@s_en,N'ế','ê');
+    SET @s_en = REPLACE(@s_en,N'ệ','ê');
+    SET @s_en = REPLACE(@s_en,N'ể','ê');
+    SET @s_en = REPLACE(@s_en,N'ễ','ê');
+
+    SET @s_en = REPLACE(@s_en,N'ì','i');
+    SET @s_en = REPLACE(@s_en,N'í','i');
+    SET @s_en = REPLACE(@s_en,N'ị','i');
+    SET @s_en = REPLACE(@s_en,N'ỉ','i');
+    SET @s_en = REPLACE(@s_en,N'ĩ','i');
+
+    SET @s_en = REPLACE(@s_en,N'ò','o');
+    SET @s_en = REPLACE(@s_en,N'ó','o');
+    SET @s_en = REPLACE(@s_en,N'ọ','o');
+    SET @s_en = REPLACE(@s_en,N'ỏ','o');
+    SET @s_en = REPLACE(@s_en,N'õ','o');
+    SET @s_en = REPLACE(@s_en,N'ồ','ô');
+    SET @s_en = REPLACE(@s_en,N'ố','ô');
+    SET @s_en = REPLACE(@s_en,N'ộ','ô');
+    SET @s_en = REPLACE(@s_en,N'ổ','ô');
+    SET @s_en = REPLACE(@s_en,N'ỗ','ô');
+    SET @s_en = REPLACE(@s_en,N'ơ','ơ');
+    SET @s_en = REPLACE(@s_en,N'ờ','ơ');
+    SET @s_en = REPLACE(@s_en,N'ớ','ơ');
+    SET @s_en = REPLACE(@s_en,N'ợ','ơ');
+    SET @s_en = REPLACE(@s_en,N'ở','ơ');
+    SET @s_en = REPLACE(@s_en,N'ỡ','ơ');
+
+    SET @s_en = REPLACE(@s_en,N'ù','u');
+    SET @s_en = REPLACE(@s_en,N'ú','u');
+    SET @s_en = REPLACE(@s_en,N'ụ','u');
+    SET @s_en = REPLACE(@s_en,N'ủ','u');
+    SET @s_en = REPLACE(@s_en,N'ũ','u');
+    SET @s_en = REPLACE(@s_en,N'ừ','ư');
+    SET @s_en = REPLACE(@s_en,N'ứ','ư');
+    SET @s_en = REPLACE(@s_en,N'ự','ư');
+    SET @s_en = REPLACE(@s_en,N'ử','ư');
+    SET @s_en = REPLACE(@s_en,N'ữ','ư');
+
+    SET @s_en = REPLACE(@s_en,N'ỳ','y');
+    SET @s_en = REPLACE(@s_en,N'ý','y');
+    SET @s_en = REPLACE(@s_en,N'ỵ','y');
+    SET @s_en = REPLACE(@s_en,N'ỷ','y');
+    SET @s_en = REPLACE(@s_en,N'ỹ','y');
+
+    SET @s_en = REPLACE(@s_en,N'đ','d');
+
+    RETURN @s_en;
+END
+GO
+

@@ -1,0 +1,6 @@
+Bảng Document thêm cột PublishPlace - nvarchar(MAX)
+Bảng DocumentStock thêm cột OrdinalNumber - int
+Bảng DocumentInvoiceDetail thêm cột DateInReality datetime
+Bảng DocumentInvoiceDetail thêm cột DateOut	datetime
+Bảng DocumentInvoiceDetail thêm cột DateIn	datetime
+Bảng DocumentInvoiceDetail thêm cột IsCompleted	bit

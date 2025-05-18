@@ -1,0 +1,14 @@
+.ProductCard {
+  width: 100%;
+}
+/* over ride antd */
+.ProductCard .ant-card-meta-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.ProductCard .ant-card-meta-detail {
+  text-align: center;
+}
+.ProductCard .ant-card-body {
+  padding: 5px !important;
+}

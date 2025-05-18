@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\NXC\Desktop\Deploy\DigitalLibrary</_PublishTargetUrl>
+    <History>False|2024-08-29T03:39:55.5632929Z||;True|2024-02-27T10:41:02.5378608+07:00||;True|2024-02-16T11:44:49.9871478+07:00||;True|2023-12-12T10:03:00.0122669+07:00||;True|2023-10-24T13:51:36.1879961+07:00||;True|2023-10-24T11:48:13.5621476+07:00||;False|2023-10-24T11:25:01.7561973+07:00||;False|2023-10-24T11:24:46.9563539+07:00||;False|2023-10-24T11:24:38.7121862+07:00||;False|2023-10-24T11:24:27.6213988+07:00||;False|2023-10-24T11:23:31.7907783+07:00||;True|2022-09-15T14:41:39.0851099+07:00||;True|2022-07-07T11:01:50.5378319+07:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

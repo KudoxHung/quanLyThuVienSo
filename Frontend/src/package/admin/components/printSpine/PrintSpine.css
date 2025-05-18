@@ -1,0 +1,87 @@
+.PrintSpine {
+  padding: 40px;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); */
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 25px;
+}
+@media print {
+  .group-of-books {
+    break-inside: avoid;
+  }
+  .printTitle {
+    break-inside: avoid;
+  }
+  .PrintSpineOld .book-spine-old {
+    break-inside: avoid;
+  }
+  .PrintSpineOld .book-spine-old2 {
+    break-inside: avoid;
+  }
+  .PrintSpineOld {
+    break-inside: avoid;
+  }
+}
+.book-spine {
+  border: 1px solid #000;
+  width: 160px;
+  height: 100px;
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #fff;
+}
+.book-spine-left {
+  width: 36%;
+}
+.book-spine-right {
+  width: 64%;
+  border-left: 1px solid #000;
+  height: 120%;
+}
+.book-spine-right-top {
+  width: 100%;
+}
+.book-spine-left-barcode {
+  transform: rotate(270deg);
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+.book-spine-right-schoolName {
+  font-size: 8px;
+  text-align: center;
+  /* padding-bottom: 12px; */
+}
+.book-spine-right-number {
+  font-weight: 800;
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
+.book-spine-right-line {
+  border-bottom: 2px solid #000;
+  padding-top: 2px;
+  margin: 0 0 0 0;
+  width: 100%;
+}
+.book-spine-right-code {
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+  padding-top: 2px;
+  color: #000;
+}
+.book-spine-right-nameCategorySign {
+  font-size: 12px;
+  text-align: center;
+  padding: 1px 5px 2px 5px;
+  border-bottom: 1px solid #000;
+  margin: 0 0 0 0;
+  font-weight: bold;
+  color: #000;
+}

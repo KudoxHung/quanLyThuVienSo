@@ -1,0 +1,359 @@
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\nlog.config
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\appsettings.Development.json
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\appsettings.json
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.WebApi.exe
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.WebApi.deps.json
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.WebApi.runtimeconfig.json
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.WebApi.runtimeconfig.dev.json
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.WebApi.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.WebApi.pdb
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Autofac.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\AutoMapper.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\BCrypt.Net-Next.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Dapper.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Dapper.Extensions.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DocumentFormat.OpenXml.Framework.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\EPPlus.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\EPPlus.Interfaces.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\EPPlus.System.Drawing.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Humanizer.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Configuration.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Abstractions.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\MiniWord.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\NLog.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\NLog.Web.AspNetCore.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Composition.Convention.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Composition.Hosting.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Composition.Runtime.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Composition.TypedParts.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.IO.Packaging.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.Data.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.Service.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.Data.pdb
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.Service.pdb
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.csproj.AssemblyReference.cache
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.AssemblyInfoInputs.cache
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.AssemblyInfo.cs
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.csproj.CoreCompileInputs.cache
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.sourcelink.json
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.RazorTargetAssemblyInfo.cache
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\scopedcss\bundle\DigitalLibary.WebApi.styles.css
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\staticwebassets\DigitalLibary.WebApi.StaticWebAssets.Manifest.cache
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\staticwebassets\DigitalLibary.WebApi.StaticWebAssets.Pack.cache
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\staticwebassets\msbuild.DigitalLibary.WebApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\staticwebassets\msbuild.build.DigitalLibary.WebApi.props
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.DigitalLibary.WebApi.props
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.DigitalLibary.WebApi.props
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalL.D7ED9D2E.Up2Date
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\refint\DigitalLibary.WebApi.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.pdb
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.genruntimeconfig.cache
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\ref\DigitalLibary.WebApi.dll
+C:\DPD TECH\digitallibrary\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\CloudinaryDotNet.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\nlog.config
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\appsettings.Development.json
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\appsettings.json
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.WebApi.exe
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.WebApi.deps.json
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.WebApi.runtimeconfig.json
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.WebApi.runtimeconfig.dev.json
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.WebApi.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.WebApi.pdb
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Autofac.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Autofac.Extensions.DependencyInjection.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\AutoMapper.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\BCrypt.Net-Next.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\CloudinaryDotNet.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Dapper.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Dapper.Extensions.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DocumentFormat.OpenXml.Framework.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\EPPlus.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\EPPlus.Interfaces.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\EPPlus.System.Drawing.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Humanizer.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Configuration.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Logging.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Abstractions.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\MiniWord.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\NLog.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\NLog.Extensions.Logging.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\NLog.Web.AspNetCore.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Composition.Convention.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Composition.Hosting.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Composition.Runtime.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Composition.TypedParts.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.IO.Packaging.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.Data.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.Service.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.Data.pdb
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\bin\Debug\net5.0\DigitalLibary.Service.pdb
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.csproj.AssemblyReference.cache
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.AssemblyInfoInputs.cache
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.AssemblyInfo.cs
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.csproj.CoreCompileInputs.cache
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.RazorTargetAssemblyInfo.cache
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\scopedcss\bundle\DigitalLibary.WebApi.styles.css
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\staticwebassets\DigitalLibary.WebApi.StaticWebAssets.Manifest.cache
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\staticwebassets\DigitalLibary.WebApi.StaticWebAssets.Pack.cache
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\staticwebassets\msbuild.DigitalLibary.WebApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\staticwebassets\msbuild.build.DigitalLibary.WebApi.props
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.DigitalLibary.WebApi.props
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.DigitalLibary.WebApi.props
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalL.D7ED9D2E.Up2Date
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\refint\DigitalLibary.WebApi.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.pdb
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.genruntimeconfig.cache
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\ref\DigitalLibary.WebApi.dll

@@ -1,0 +1,61 @@
+.PrintLibraryCard-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  padding: 60px;
+}
+
+.PrintLibraryCard-card {
+  border: 4px double #0a0a0a !important;
+  border-radius: 0px !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  width: 330px;
+  height: 220px !important;
+}
+
+.PrintLibraryCard .ant-card-body {
+  padding: 0px !important;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+@media all {
+  .page-break {
+    display: none;
+  }
+}
+
+@media print {
+  html,
+  body {
+    height: initial !important;
+    overflow: initial !important;
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+@media print {
+  /*.group-of-books{*/
+  /*  break-inside: avoid;*/
+  /*}*/
+  .page-break {
+    margin-top: 19rem;
+    display: block;
+    page-break-before: auto;
+  }
+  .PrintLibraryCard-card {
+    break-inside: avoid;
+  }
+}
+
+@page {
+  size: auto;
+  margin: 2mm;
+}

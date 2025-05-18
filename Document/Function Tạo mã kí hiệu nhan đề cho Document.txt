@@ -1,0 +1,101 @@
+USE [ThuVienSo_Note]
+GO
+
+/****** Object:  UserDefinedFunction [dbo].[ProcessString]    Script Date: 09/04/2024 12:09:52 SA ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE FUNCTION [dbo].[ProcessString]
+(
+    @inputString NVARCHAR(MAX) -- Chuỗi đầu vào
+)
+RETURNS NVARCHAR(MAX) -- Chuỗi đầu ra
+AS
+BEGIN
+    DECLARE @outputString NVARCHAR(MAX);
+
+    -- Tách từ đầu tiên từ chuỗi đầu vào
+    DECLARE @firstWord NVARCHAR(MAX);
+	DECLARE @thirdWord NVARCHAR(MAX);
+    SET @firstWord = LEFT(@inputString, CHARINDEX(' ', @inputString + ' ') - 1);
+	SET @firstWord = [ThuVienSo_Note].dbo.vi_to_en_spec(@firstWord)
+	SET @thirdWord = @firstWord
+    -- Xử lý từ đầu tiên
+    DECLARE @tempWord NVARCHAR(MAX);
+    DECLARE @signCode NVARCHAR(3);
+    DECLARE @signNum INT;
+    WHILE LEN(@firstWord) > 0
+    BEGIN
+            SET @tempWord = LEFT(@firstWord, 3);
+            IF @tempWord IN ('ch', 'gh', 'gi', 'kh', 'ng', 'ngh', 'nh', 'th', 'tr', 'qu', 'b',
+                             'c', 'd', 'đ', 'g', 'h', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'x')
+				BEGIN
+					SET @outputString = UPPER(@tempWord);
+					SET @thirdWord = SUBSTRING(@thirdWord, LEN(@outputString) + 1, LEN(@thirdWord));
+					BREAK;
+				END
+            ELSE
+				BEGIN
+					SET @firstWord = LEFT(@firstWord, LEN(@firstWord) - 1);
+				END
+     END
+    IF LEN(@outputString) > 0
+    BEGIN
+	SET @thirdWord = UPPER(@thirdWord);
+        -- Tìm mã ký tự cho phần còn lại của từ đầu tiên
+        SELECT TOP 1 @signCode = SignCode, @signNum = SignNum
+        FROM (
+            VALUES 
+                ('A', 100), ('AC', 101), ('ACH', 102), ('AI', 103), ('AM', 104), ('AN', 105), 
+                ('ANG', 106), ('ANH', 107), ('AO', 108), ('AP', 109), ('AT', 110), ('AU', 111), 
+                ('AY', 112), ('ĂC', 113), ('ĂM', 114), ('ĂN', 115), ('ĂNG', 116), ('ĂP', 117), 
+                ('ĂT', 118), ('ÂC', 119), ('ÂM', 120), ('ÂN', 121), ('ÂNG', 122), ('ÂP', 123), 
+                ('ÂT', 124), ('ÂU', 125), ('ÂY', 126), ('E', 200), ('EC', 201), ('EM', 202), 
+                ('EN', 203), ('ENG', 204), ('EO', 205), ('EP', 206), ('ET', 207), ('Ê', 250), 
+                ('ÊC', 251), ('ÊCH', 252), ('ÊM', 253), ('ÊN', 254), ('ÊNG', 255), ('ÊNH', 256), 
+                ('ÊP', 257), ('ÊT', 258), ('ÊU', 259), ('I', 300), ('IA', 301), ('ICH', 302), 
+                ('IÊC', 303), ('IÊM', 304), ('IÊN', 305), ('IÊNG', 306), ('IÊP', 307), ('IÊT', 308), 
+                ('IÊU', 309), ('IM', 310), ('IN', 311), ('INH', 312), ('IP', 313), ('IT', 314), 
+                ('IU', 315), ('O', 400), ('OA', 401), ('OAC', 402), ('OACH', 403), ('OAI', 404), 
+                ('OAM', 405), ('OAN', 406), ('OANG', 407), ('OANH', 408), ('OAO', 409), ('OAP', 410), 
+                ('OAT', 411), ('OAY', 412), ('OĂC', 413), ('OĂM', 414), ('OĂN', 415), ('OĂNG', 416), 
+                ('OĂP', 417), ('OĂT', 418), ('OC', 419), ('OE', 420), ('OEC', 421), ('OEM', 422), 
+                ('OEN', 423), ('OENG', 424), ('OEO', 425), ('OEP', 426), ('OET', 427), ('OI', 428), 
+                ('OM', 429), ('ON', 430), ('ONG', 431), ('OOC', 432), ('OONG', 433), ('OP', 434), 
+                ('OT', 435), ('Ô', 450), ('ÔC', 451), ('ÔI', 452), ('ÔM', 453), ('ÔN', 454), ('ÔNG', 455), 
+                ('ÔÔNG', 456), ('ÔP', 457), ('ÔT', 458), ('Ơ', 460), ('ƠC', 461), ('ƠI', 462), ('ƠM', 463), 
+                ('ƠN', 464), ('ƠNG', 465), ('ƠP', 466), ('ƠT', 467), ('U', 500), ('UA', 501), ('UÂN', 502), 
+                ('UÂNG', 503), ('UÂT', 504), ('UÂY', 505), ('UC', 506), ('UÊ', 507), ('UÊCH', 508), ('UÊNH', 509), 
+                ('UI', 510), ('UM', 511), ('UN', 512), ('UNG', 513), ('UÔC', 514), ('UÔI', 515), ('UÔM', 516), 
+                ('UÔN', 517), ('UÔNG', 518), ('UÔT', 519), ('UƠ', 520), ('UP', 521), ('UT', 522), ('UY', 523), 
+                ('UYA', 524), ('UYCH', 525), ('UYÊC', 526), ('UYÊN', 527), ('UYÊT', 528), ('UYM', 529), ('UYN', 530), 
+                ('UYNH', 531), ('UYP', 532), ('UYT', 533), ('UYU', 534), ('Ư', 550), ('ƯA', 551), ('ƯC', 552), 
+                ('ƯI', 553), ('ƯM', 554), ('ƯN', 555), ('ƯNG', 556), ('ƯƠC', 557), ('ƯƠI', 558), ('ƯƠM', 559), 
+                ('ƯƠN', 560), ('ƯƠNG', 561), ('ƯƠP', 562), ('ƯƠT', 563), ('ƯƠU', 564), ('ƯT', 565), ('ƯU', 566), 
+                ('Y', 600), ('YCH', 601), ('YÊM', 602), ('YÊN', 603), ('YÊNG', 604), ('YÊT', 605), ('YÊU', 606), 
+                ('YM', 607), ('YN', 608), ('YNH', 609), ('YP', 610)
+        ) AS signCodes(SignCode, SignNum)
+        WHERE @thirdWord = SignCode;
+
+        IF @@ROWCOUNT > 0
+        BEGIN
+            SET @outputString = @outputString + CAST(@signNum AS NVARCHAR(3));
+        END
+    END
+
+    -- Thêm chữ cái đầu tiên của từ thứ hai (nếu có)
+    IF CHARINDEX(' ', @inputString) > 0
+    BEGIN
+        DECLARE @secondWord NVARCHAR(MAX);
+        SET @secondWord = SUBSTRING(@inputString, CHARINDEX(' ', @inputString) + 1, LEN(@inputString));
+        SET @outputString = @outputString + LOWER(LEFT(@secondWord, 1));
+    END
+    -- Trả về kết quả
+    RETURN @outputString;
+END;
+GO
+

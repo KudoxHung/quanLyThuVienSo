@@ -1,0 +1,105 @@
+.PrintSpineOld {
+  padding: 33px;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); */
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 10px;
+  color: #000;
+  gap: 25px;
+}
+
+@media print {
+  .printTitle {
+    break-inside: avoid;
+  }
+  .group-of-books {
+    break-inside: avoid;
+  }
+  .PrintSpineOld {
+    break-inside: avoid;
+  }
+  .PrintSpineOld .book-spine-old {
+    /*page-break-before: always;*/
+    break-inside: avoid;
+  }
+  .PrintSpineOld .book-spine-old2 {
+    break-inside: avoid;
+  }
+}
+/*.PrintSpineOld .PrintSpine {*/
+/*  page-break-inside: avoid;*/
+/*  page-break-before: avoid;*/
+/*  page-break-after: avoid;*/
+/*  break-inside: avoid;*/
+/*}*/
+.PrintSpineOld .book-spine-old {
+  border: 1px solid #000;
+  width: 160px;
+  /*height: 100px;*/
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #fff;
+}
+.PrintSpineOld .book-spine-old2 {
+  border: 1px solid #000;
+  /*width: 150px;*/
+  /*height: 130px;*/
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+.PrintSpineOld .book-spine-old2 .book-spine-old-right2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.PrintSpineOld
+  .book-spine-old2
+  .book-spine-old-right2
+  .book-spine-old-right2-line {
+  width: 100%;
+  border-bottom: 3px solid #000;
+  margin-bottom: 6px;
+}
+.PrintSpineOld .book-spine-old-left {
+  width: 50%;
+}
+.PrintSpineOld .book-spine-old-left-barcode {
+  transform: rotate(270deg);
+  margin-top: 33px;
+}
+.PrintSpineOld .book-spine-old-right-schoolName {
+  font-size: 8px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+  /* padding-bottom: 12px; */
+}
+.PrintSpineOld .book-spine-old-right-number {
+  font-weight: 800;
+  font-size: 12px;
+  /* padding-bottom: 6px; */
+  text-align: center;
+}
+.PrintSpineOld .book-spine-old-right-line {
+  border-bottom: 3px solid #000;
+  margin-bottom: 6px;
+}
+.PrintSpineOld .book-spine-old-right-code {
+  font-weight: 800;
+  font-size: 10px;
+  text-align: center;
+}
+.PrintSpineOld .book-spine-old-right-nameCategorySign {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 1px;
+  font-weight: bold;
+  /* padding-top: 6px; */
+}

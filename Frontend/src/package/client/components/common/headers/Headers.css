@@ -1,0 +1,80 @@
+.header {
+  background: #ffffff;
+}
+
+.header-above_auth__item {
+  float: right;
+  color: #000000;
+}
+.sticky {
+  position: fixed;
+  top: -45px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  transform: translateY(-100%);
+  transition: all 400ms ease;
+}
+.sticky-hide {
+  opacity: 0;
+  visibility: hidden;
+}
+.sticky-up {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.ProductsFrame-title {
+  font-size: 30px !important;
+  font-weight: bold !important;
+}
+
+/* over ride andt */
+.header-under .ant-menu-item::after {
+  bottom: 7px !important;
+}
+.header-under .ant-menu-horizontal {
+  border-bottom: none !important;
+}
+.header-under .ant-menu-item-selected {
+  color: #ffffff !important;
+}
+.header-under .ant-menu-item-selected::after {
+  border-bottom: 2px solid #ffffff !important;
+}
+.header-above_search .ant-input-search-button {
+  line-height: 0 !important;
+  height: 32px !important;
+}
+.header-above_search .ant-input {
+  height: 22px !important;
+}
+/* .ant-menu-submenu-popup > .ant-menu {
+  background: #b89d9d !important;
+} */
+
+.header-above_search__input {
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 5px 10px 5px 10px;
+  font-size: 14px;
+  color: #000000;
+  outline: none;
+  transition: all 0.3s;
+  margin-bottom: 5px;
+}
