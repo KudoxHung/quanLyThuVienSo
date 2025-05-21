@@ -34,17 +34,13 @@ function BookNote(props) {
     documentInVoice
       .EditNoteContentDocumentInvoiceDetailById({
         id: id,
-        note: NoteContent,
+        note: NoteContent
       })
       .then((res) => {
         openNotificationWithIcon("success", "Thành công", res?.message);
       })
       .catch((err) => {
-        openNotificationWithIcon(
-          "error",
-          "Thất bại",
-          err?.response?.data?.message || err?.message,
-        );
+        openNotificationWithIcon("error", "Thất bại", err?.response?.data?.message || err?.message);
       })
       .finally(() => {});
     setIsVisibleNote(false);
@@ -66,9 +62,7 @@ function BookNote(props) {
       />
       <br />
       <Space style={{ width: "100%", justifyContent: "flex-end" }}>
-        {IsVisibleNote && (
-          <p style={{ color: "red" }}>*Nội dung đã được thay đổi và chưa lưu</p>
-        )}
+        {IsVisibleNote && <p style={{ color: "red" }}>*Nội dung đã được thay đổi và chưa lưu</p>}
         <Button type={"primary"} onClick={onChangeNoteContent}>
           Lưu thay đổi
         </Button>

@@ -290,7 +290,7 @@ function HeaderAbove({ logoDpd, scroll, contactAndIntroduction }) {
                   display: breakpoint.xs ? "none" : "block"
                 }}
               >
-                NOTE
+                THPT VMĐ
               </Typography.Title>
             ) : (
               <Image
@@ -672,7 +672,7 @@ function HeaderUnder({
                   </Dropdown>
                 </Spin>
               </Badge.Ribbon>
-              {/* <Badge.Ribbon text="Dùng chung" color={"pink"} style={{ transform: "translateY(-16px)" }}>
+              <Badge.Ribbon text="Dùng chung" color={"pink"} style={{ transform: "translateY(-16px)" }}>
                 <Spin spinning={loadingTypeDocumentDigitalConnect}>
                   <Dropdown
                     overlay={menuDigitalConnect}
@@ -687,7 +687,7 @@ function HeaderUnder({
                     </Menu.Item>
                   </Dropdown>
                 </Spin>
-              </Badge.Ribbon> */}
+              </Badge.Ribbon>
               <Menu.SubMenu style={colorTextHeader} key={"2"} title="Học liệu điện tử">
                 <Menu.Item key={"4"}>
                   <NavLink to={"/categoryVes"} onClick={(e) => setMenuVisible(false)}>

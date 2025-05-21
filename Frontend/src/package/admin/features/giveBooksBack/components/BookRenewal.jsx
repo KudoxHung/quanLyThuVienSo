@@ -8,19 +8,7 @@ import { books } from "../../../api/books";
 import { documentInVoice } from "../../../api/documentInVoice";
 import { individualSample } from "../../../api/individualSample";
 import { ProForm, ProFormGroup, ProFormText } from "@ant-design/pro-form";
-import {
-  Button,
-  Card,
-  Col,
-  DatePicker,
-  Form,
-  Row,
-  Skeleton,
-  Space,
-  Table,
-  Tag,
-  Typography,
-} from "antd";
+import { Button, Card, Col, DatePicker, Form, Row, Skeleton, Space, Table, Tag, Typography } from "antd";
 import moment from "moment/moment";
 
 function _BookRenewal(props) {
@@ -34,7 +22,7 @@ function _BookRenewal(props) {
   const [SelectedRowKeys, setSelectedRowKeys] = useState([]);
   const [postLength, setPostLength] = useState(0);
   const [form] = Form.useForm();
-
+  // form.resetFields();
   useEffect(() => {
     (async () => {
       try {
@@ -52,11 +40,7 @@ function _BookRenewal(props) {
             console.log(res);
           })
           .catch((err) => {
-            openNotificationWithIcon(
-              "error",
-              "Lấy sách thất bại",
-              err?.reponese?.data?.message || err?.message,
-            );
+            openNotificationWithIcon("error", "Lấy sách thất bại", err?.reponese?.data?.message || err?.message);
           })
           .finally(() => {});
       } catch (e) {
@@ -66,17 +50,12 @@ function _BookRenewal(props) {
       }
     })();
   }, [id, postLength]);
+
   useEffect(() => {
     (async () => {
       try {
-        const [user] = await Promise.all([
-          users.getAllUsers(0, 0),
-          // books.getAll(0, 0, 1),
-          // individualSample.getAll(0, 0)
-        ]);
+        const [user] = await Promise.all([users.getAllUsers(0, 0)]);
         setUsers(user);
-        // setBooks(book);
-        // setIndividualSample(individual);
       } catch (e) {
         console.log("error => ", e);
       }
@@ -89,24 +68,21 @@ function _BookRenewal(props) {
     documentInVoice
       .ExtendTheExpireDateDocumentInvoiceVer2({
         date: dateOut,
-        listId: SelectedRowKeys,
+        listId: SelectedRowKeys
       })
       .then((res) => {
-        openNotificationWithIcon("success", "gia hạn thành công", res?.message);
-        setPostLength((prevState) => prevState + 1);
-        form.resetFields();
+        openNotificationWithIcon("success", "Gia hạn thành công", res?.message);
+        setPostLength(postLength + 1);
+        // form.resetFields();
       })
       .catch((err) => {
-        openNotificationWithIcon(
-          "error",
-          "gia hạn thất bại",
-          err?.response?.data?.message || err?.message,
-        );
+        openNotificationWithIcon("error", "Gia hạn thất bại", err?.response?.data?.message || err?.message);
       })
       .finally(() => {
         setBtnLoading(false);
         setVisiable(false);
         setPostLength1(postLength1 + 1);
+        // form.resetFields();
       });
   };
 
@@ -125,14 +101,14 @@ function _BookRenewal(props) {
                 // Configure the button text
                 searchConfig: {
                   resetText: "reset",
-                  submitText: "submit",
+                  submitText: "submit"
                 },
                 // Configure the properties of the button
                 resetButtonProps: {
                   style: {
                     // Hide the reset button
-                    display: "none",
-                  },
+                    display: "none"
+                  }
                 },
                 submitButtonProps: {},
                 // Fully customize the entire area
@@ -141,40 +117,30 @@ function _BookRenewal(props) {
                     <Space
                       style={{
                         width: "100%",
-                        justifyContent: "flex-end",
+                        justifyContent: "flex-end"
                       }}
                     >
                       <Button
                         size="large"
                         type="primary"
                         key="submit"
-                        onClick={() => props.form?.submit?.()}
+                        onClick={() => form?.submit?.()}
                         loading={btnLoading}
                         disabled={SelectedRowKeys.length === 0}
                       >
-                        Xác nhận{" "}
-                        {SelectedRowKeys.length > 0
-                          ? `(${SelectedRowKeys.length})`
-                          : ""}
+                        Xác nhận {SelectedRowKeys.length > 0 ? `(${SelectedRowKeys.length})` : ""}
                       </Button>
-                    </Space>,
+                    </Space>
                   ];
-                },
+                }
               }}
             >
-              <ProFormGroup
-                label={
-                  <Typography.Title level={5}>Người mượn</Typography.Title>
-                }
-              >
+              <ProFormGroup label={<Typography.Title level={5}>Người mượn</Typography.Title>}>
                 <ProFormText
                   label="Người mượn"
                   showSearch
                   disabled
-                  value={
-                    Users.find((user) => user.id === DocumentInVoice?.userId)
-                      ?.fullname || "Người mượn"
-                  }
+                  value={Users.find((user) => user.id === DocumentInVoice?.userId)?.fullname || "Người mượn"}
                 />
                 <ProFormText
                   label="Số chứng từ"
@@ -184,9 +150,7 @@ function _BookRenewal(props) {
                   value={DocumentInVoice?.invoiceCode}
                 />
               </ProFormGroup>
-              <ProForm.Group
-                label={<Typography.Title level={5}>Thông tin</Typography.Title>}
-              >
+              <ProForm.Group label={<Typography.Title level={5}>Thông tin</Typography.Title>}>
                 <Form.Item
                   label="Thời gian"
                   name="restdate"
@@ -194,8 +158,8 @@ function _BookRenewal(props) {
                   rules={[
                     {
                       required: true,
-                      message: "Vui lòng chọn thời gian",
-                    },
+                      message: "Vui lòng chọn thời gian"
+                    }
                   ]}
                 >
                   <DatePicker.RangePicker
@@ -209,12 +173,12 @@ function _BookRenewal(props) {
                       "Thêm 21 ngày": [moment(), moment().add(21, "days")],
                       "Thêm 30 ngày": [moment(), moment().add(30, "days")],
                       "Thêm 60 ngày": [moment(), moment().add(60, "days")],
-                      "Thêm 90 ngày": [moment(), moment().add(90, "days")],
+                      "Thêm 90 ngày": [moment(), moment().add(90, "days")]
                     }}
                     disabled={[true, false]}
                     placeholder={[
                       moment(DocumentInVoice?.dateOut).format("DD-MM-YYYY"),
-                      moment(DocumentInVoice?.dateIn).format("DD-MM-YYYY"),
+                      moment(DocumentInVoice?.dateIn).format("DD-MM-YYYY")
                     ]}
                     format="DD-MM-YYYY HH:mm"
                     showTime
@@ -234,24 +198,18 @@ function _BookRenewal(props) {
                     renderCell: (checked, record, index, originNode) => {
                       const isCompleted = record.isCompleted;
                       return !isCompleted && originNode;
-                    },
+                    }
                     // hideSelectAll: true
                   }}
                 >
-                  <Table.Column
-                    title="STT"
-                    render={(text, record, index) => index + 1}
-                  />
+                  <Table.Column title="STT" render={(text, record, index) => index + 1} />
                   <Table.Column
                     title="Tên sách"
                     dataIndex="idDocument"
                     key="idDocument"
                     render={(text) => (
                       <Link to={`/detail-page/${text}`} target="_blank">
-                        {
-                          Books.find((book) => book.document.id === text)
-                            ?.document?.docName
-                        }
+                        {Books.find((book) => book.document.id === text)?.document?.docName}
                       </Link>
                     )}
                   />
@@ -268,12 +226,8 @@ function _BookRenewal(props) {
                   <Table.Column
                     title="Thời gian"
                     render={(text, record) => {
-                      const dateIn = moment(record.dateIn).format(
-                        "DD-MM-YYYY HH:mm",
-                      );
-                      const dateOut = moment(record.dateOut).format(
-                        "DD-MM-YYYY HH:mm",
-                      );
+                      const dateIn = moment(record.dateIn).format("DD-MM-YYYY HH:mm");
+                      const dateOut = moment(record.dateOut).format("DD-MM-YYYY HH:mm");
                       return (
                         <Space>
                           <Tag color="green-inverse">{dateIn}</Tag>
@@ -296,9 +250,7 @@ function _BookRenewal(props) {
                       return (
                         <Space>
                           <span>{daysBorrowed}</span>
-                          {daysLate > 0 && (
-                            <Tag color="red-inverse">Trễ {daysLate} ngày</Tag>
-                          )}
+                          {daysLate > 0 && <Tag color="red-inverse">Trễ {daysLate} ngày</Tag>}
                         </Space>
                       );
                     }}
@@ -307,30 +259,22 @@ function _BookRenewal(props) {
                   <Table.Column
                     title="Trạng thái"
                     render={(text, record) => {
-                      const status =
-                        DocumentInVoice.documentAndIndividualView.find(
-                          (indi) => indi.idIndividual === record.idIndividual,
-                        )?.status;
+                      const status = DocumentInVoice.documentAndIndividualView.find(
+                        (indi) => indi.idIndividual === record.idIndividual
+                      )?.status;
                       const isCheck = status === 1;
                       return (
-                        <Tag color={isCheck ? "green-inverse" : "red-inverse"}>
-                          {isCheck ? "Đã trả" : "Đang mượn"}
-                        </Tag>
+                        <Tag color={isCheck ? "green-inverse" : "red-inverse"}>{isCheck ? "Đã trả" : "Đang mượn"}</Tag>
                       );
                     }}
                   />
                   <Table.Column
                     title="Đã mất"
                     render={(text, record) => {
-                      const isLostedPhysicalVersion =
-                        DocumentInVoice.documentAndIndividualView.find(
-                          (indi) => indi.idIndividual === record.idIndividual,
-                        )?.isLostedPhysicalVersion;
-                      return (
-                        isLostedPhysicalVersion && (
-                          <Tag color="red-inverse">Đã mất</Tag>
-                        )
-                      );
+                      const isLostedPhysicalVersion = DocumentInVoice.documentAndIndividualView.find(
+                        (indi) => indi.idIndividual === record.idIndividual
+                      )?.isLostedPhysicalVersion;
+                      return isLostedPhysicalVersion && <Tag color="red-inverse">Đã mất</Tag>;
                     }}
                   />
                 </Table>

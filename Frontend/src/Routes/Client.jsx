@@ -223,9 +223,7 @@ export function Client() {
                   />
                 </Routes>
               </div>
-              <div style={{ flexGrow: 0 }}>
-                <Footer />
-              </div>
+              <div style={{ flexGrow: 0 }}>{/* <Footer /> */}</div>
             </div>
           </Fragment>
         )}

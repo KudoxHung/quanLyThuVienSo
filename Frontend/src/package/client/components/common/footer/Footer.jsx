@@ -24,7 +24,7 @@ function _Footer() {
             openNotificationWithIcon(
               "error",
               "Lấy cấu hình màu sắc thất bại",
-              err?.response?.data?.message || err?.message,
+              err?.response?.data?.message || err?.message
             );
           })
           .finally(() => {
@@ -38,15 +38,15 @@ function _Footer() {
             openNotificationWithIcon(
               "error",
               "Lấy thông tin đơn vị thất bại",
-              err?.response?.data?.message || err?.message,
+              err?.response?.data?.message || err?.message
             );
-          }),
+          })
       ]);
     };
     fetchData();
   }, []);
   const colorTextFooter = {
-    color: contactAndIntroduction?.col3 || "#fff",
+    color: contactAndIntroduction?.col3 || "#fff"
   };
 
   return (
@@ -54,7 +54,7 @@ function _Footer() {
       <div
         className="header-under footer"
         style={{
-          background: contactAndIntroduction?.col2 || "#2d2d7a",
+          background: contactAndIntroduction?.col2 || "#2d2d7a"
         }}
       >
         <Row className="Container">
@@ -62,7 +62,7 @@ function _Footer() {
             span={10}
             style={{
               display: "flex",
-              alignItems: "center",
+              alignItems: "center"
             }}
           >
             <Typography.Title
@@ -76,7 +76,7 @@ function _Footer() {
                     : breakpoint.xs
                       ? {
                           color: contactAndIntroduction?.col3 || "#fff",
-                          fontSize: "11px",
+                          fontSize: "11px"
                         }
                       : {}
               }
@@ -93,7 +93,7 @@ function _Footer() {
                 background: contactAndIntroduction?.col2 || "#2d2d7a",
                 justifyContent: "flex-end",
                 alignItems: "flex-start",
-                width: "100%",
+                width: "100%"
               }}
             >
               <Menu.Item key={"1"}>
@@ -129,7 +129,7 @@ function BackToTop() {
   const style = {
     height: 40,
     width: 40,
-    right: 40,
+    right: 40
   };
   return <BackTop style={style} />;
 }

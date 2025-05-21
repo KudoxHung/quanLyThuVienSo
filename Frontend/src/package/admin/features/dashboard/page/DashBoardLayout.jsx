@@ -11,16 +11,7 @@ import { PieCharts } from "../components/PieCharts";
 import { ProgressChart } from "../components/ProgressChart";
 import { RingProgressChart } from "../components/RingProgressChart";
 import { ArrowDownOutlined, ArrowUpOutlined } from "@ant-design/icons";
-import {
-  Badge,
-  Card,
-  Col,
-  Row,
-  Skeleton,
-  Spin,
-  Statistic,
-  Typography,
-} from "antd";
+import { Badge, Card, Col, Row, Skeleton, Spin, Statistic, Typography } from "antd";
 
 export function _DashBoardLayout() {
   const { Title } = Typography;
@@ -33,33 +24,31 @@ export function _DashBoardLayout() {
       numberUserLastMonth: 1,
       currentMonth: 7,
       lastMonth: 6,
-      percentDifference: 10.99,
+      percentDifference: 10.99
     },
     totalser: {
-      totalUser: 12,
+      totalUser: 12
     },
     bookBorrowAnalyst: {
       totalBorrowBookCurrentMonth: 1,
       totalBorrowBookLastMonth: 1,
       currentMonth: 7,
       lastMonth: 6,
-      percentDifference: 0.99,
+      percentDifference: 0.99
     },
     bookBackAnalyst: {
       totalBookBackCurrentMonth: 0,
       totalBookBackLastMonth: 1,
       currentMonth: 7,
       lastMonth: 6,
-      percentDifference: -0.01,
-    },
+      percentDifference: -0.01
+    }
   });
 
-  const [LoadingAnalystUserAndBook, setLoadingAnalystUserAndBook] =
-    useState(true);
+  const [LoadingAnalystUserAndBook, setLoadingAnalystUserAndBook] = useState(true);
   // const [loadingBooks, setLoadingBooks] = useState(true);
   const [loadingNumberUserByType, setLoadingNumberUserByType] = useState(true);
-  const [loadingNumberDocumentByType, setLoadingNumberDocumentByType] =
-    useState(true);
+  const [loadingNumberDocumentByType, setLoadingNumberDocumentByType] = useState(true);
 
   const [CalculateFolder, setCalculateFolder] = useState({});
   const [loadingCalculateFolder, setLoadingCalculateFolder] = useState(true);
@@ -95,7 +84,7 @@ export function _DashBoardLayout() {
             openNotificationWithIcon(
               "error",
               "Lấy danh thông tin lưu trữ thất bại",
-              err?.response?.data?.message || err?.message,
+              err?.response?.data?.message || err?.message
             );
           })
           .finally(() => {
@@ -110,7 +99,7 @@ export function _DashBoardLayout() {
             openNotificationWithIcon(
               "error",
               "Lấy danh sách sách thất bại",
-              err?.response?.data?.message || err?.message,
+              err?.response?.data?.message || err?.message
             );
           })
           .finally(() => {
@@ -125,7 +114,7 @@ export function _DashBoardLayout() {
             openNotificationWithIcon(
               "error",
               "Lấy danh sách sách thất bại",
-              err?.response?.data?.message || err?.message,
+              err?.response?.data?.message || err?.message
             );
           })
           .finally(() => {
@@ -140,12 +129,12 @@ export function _DashBoardLayout() {
             openNotificationWithIcon(
               "error",
               "Lấy danh sách sách thất bại",
-              err?.response?.data?.message || err?.message,
+              err?.response?.data?.message || err?.message
             );
           })
           .finally(() => {
             setLoadingAnalystUserAndBook(false);
-          }),
+          })
       ]);
     };
     fetchData();
@@ -167,17 +156,10 @@ export function _DashBoardLayout() {
         p-id="4264"
         fill="#fff"
       ></path>
-    </svg>,
+    </svg>
   ];
   const profile = [
-    <svg
-      width="22"
-      height="22"
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      key={0}
-    >
+    <svg width="22" height="22" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" key={0}>
       <path
         d="M9 6C9 7.65685 7.65685 9 6 9C4.34315 9 3 7.65685 3 6C3 4.34315 4.34315 3 6 3C7.65685 3 9 4.34315 9 6Z"
         fill="#fff"
@@ -190,28 +172,18 @@ export function _DashBoardLayout() {
         d="M12.9291 17C12.9758 16.6734 13 16.3395 13 16C13 14.3648 12.4393 12.8606 11.4998 11.6691C12.2352 11.2435 13.0892 11 14 11C16.7614 11 19 13.2386 19 16V17H12.9291Z"
         fill="#fff"
       ></path>
-      <path
-        d="M6 11C8.76142 11 11 13.2386 11 16V17H1V16C1 13.2386 3.23858 11 6 11Z"
-        fill="#fff"
-      ></path>
-    </svg>,
+      <path d="M6 11C8.76142 11 11 13.2386 11 16V17H1V16C1 13.2386 3.23858 11 6 11Z" fill="#fff"></path>
+    </svg>
   ];
   const heart = [
-    <svg
-      width="22"
-      height="22"
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      key={0}
-    >
+    <svg width="22" height="22" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" key={0}>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
         d="M3.17157 5.17157C4.73367 3.60948 7.26633 3.60948 8.82843 5.17157L10 6.34315L11.1716 5.17157C12.7337 3.60948 15.2663 3.60948 16.8284 5.17157C18.3905 6.73367 18.3905 9.26633 16.8284 10.8284L10 17.6569L3.17157 10.8284C1.60948 9.26633 1.60948 6.73367 3.17157 5.17157Z"
         fill="#fff"
       ></path>
-    </svg>,
+    </svg>
   ];
   const cart = [
     <svg
@@ -229,7 +201,7 @@ export function _DashBoardLayout() {
         p-id="4025"
         fill="#fff"
       ></path>
-    </svg>,
+    </svg>
   ];
 
   const count = [
@@ -243,7 +215,7 @@ export function _DashBoardLayout() {
             value={AnalystUserAndBook.bookBorrowAnalyst.percentDifference}
             precision={2}
             valueStyle={{
-              color: "#52c41a",
+              color: "#52c41a"
             }}
             prefix={<ArrowUpOutlined />}
             suffix="%"
@@ -254,17 +226,14 @@ export function _DashBoardLayout() {
             value={AnalystUserAndBook.bookBorrowAnalyst.percentDifference}
             precision={2}
             valueStyle={{
-              color: "#cf1322",
+              color: "#cf1322"
             }}
             prefix={<ArrowDownOutlined />}
             suffix="%"
           />
         ),
       icon: dollor,
-      bnb:
-        AnalystUserAndBook.bookBorrowAnalyst.percentDifference > 0
-          ? "bnb2"
-          : "redtext",
+      bnb: AnalystUserAndBook.bookBorrowAnalyst.percentDifference > 0 ? "bnb2" : "redtext"
     },
     {
       today: `Lượt trả sách tháng ${AnalystUserAndBook.bookBackAnalyst.currentMonth}`,
@@ -276,7 +245,7 @@ export function _DashBoardLayout() {
             value={AnalystUserAndBook.bookBackAnalyst.percentDifference}
             precision={2}
             valueStyle={{
-              color: "#52c41a",
+              color: "#52c41a"
             }}
             prefix={<ArrowUpOutlined />}
             suffix="%"
@@ -287,20 +256,20 @@ export function _DashBoardLayout() {
             value={AnalystUserAndBook.bookBackAnalyst.percentDifference}
             precision={2}
             valueStyle={{
-              color: "#cf1322",
+              color: "#cf1322"
             }}
             prefix={<ArrowDownOutlined />}
             suffix="%"
           />
         ),
       icon: cart,
-      bnb: "bnb2",
+      bnb: "bnb2"
     },
     {
       today: "Tổng số người dùng",
       title: AnalystUserAndBook.totalser.totalUser,
       // persent: `${AnalystUserAndBook.totalser.percentDifference}% so với tháng trước`,
-      icon: profile,
+      icon: profile
     },
     {
       today: `Người dùng mới tháng ${AnalystUserAndBook.userAnalyst.currentMonth}`,
@@ -312,7 +281,7 @@ export function _DashBoardLayout() {
             value={AnalystUserAndBook.userAnalyst.percentDifference}
             precision={2}
             valueStyle={{
-              color: "#52c41a",
+              color: "#52c41a"
             }}
             prefix={<ArrowUpOutlined />}
             suffix="%"
@@ -323,18 +292,15 @@ export function _DashBoardLayout() {
             value={AnalystUserAndBook.userAnalyst.percentDifference}
             precision={2}
             valueStyle={{
-              color: "#cf1322",
+              color: "#cf1322"
             }}
             prefix={<ArrowDownOutlined />}
             suffix="%"
           />
         ),
       icon: heart,
-      bnb:
-        AnalystUserAndBook.userAnalyst.percentDifference > 0
-          ? "bnb2"
-          : "redtext",
-    },
+      bnb: AnalystUserAndBook.userAnalyst.percentDifference > 0 ? "bnb2" : "redtext"
+    }
   ];
 
   // const timelineList = [
@@ -419,12 +385,12 @@ export function _DashBoardLayout() {
 
   const dataCharts = NumberDocumentByType.map((item, index) => ({
     type: `${item.documentType.docTypeName}/${item.documentType.id}`,
-    value: item.count,
+    value: item.count
   }));
 
   const dataBarCharts = NumberUserByType.map((item) => ({
     type: item.userType.typeName,
-    value: item.numberUser,
+    value: item.numberUser
   }));
 
   const dataProgressCharts = useMemo(() => {
@@ -432,9 +398,7 @@ export function _DashBoardLayout() {
     if (CalculateFolder.database) {
       let a = 0;
       CalculateFolder.database.forEach((x) => (a += x.sizeDatabaseMB));
-      return (
-        Math.round(((CalculateFolder.rootFolderMB + a) / 1024) * 100) / 100
-      );
+      return Math.round(((CalculateFolder.rootFolderMB + a) / 1024) * 100) / 100;
     }
   }, [CalculateFolder]);
 
@@ -443,15 +407,7 @@ export function _DashBoardLayout() {
       <div className="layout-content">
         <Row className="rowgap-vbox" gutter={[24, 0]}>
           {count.map((c, index) => (
-            <Col
-              key={index}
-              xs={24}
-              sm={24}
-              md={12}
-              lg={6}
-              xl={6}
-              className="mb-24"
-            >
+            <Col key={index} xs={24} sm={24} md={12} lg={6} xl={6} className="mb-24">
               {index === 3 ? (
                 <Badge.Ribbon text="Mới" color="red">
                   <Card bordered={false} className="criclebox ">
@@ -461,8 +417,7 @@ export function _DashBoardLayout() {
                           <Col xs={18}>
                             <span>{c.today}</span>
                             <Title level={3}>
-                              {c.title}{" "}
-                              <small className={c.bnb}>{c.persent}</small>
+                              {c.title} <small className={c.bnb}>{c.persent}</small>
                             </Title>
                           </Col>
                           <Col xs={6}>
@@ -481,8 +436,7 @@ export function _DashBoardLayout() {
                         <Col xs={18}>
                           <span>{c.today}</span>
                           <Title level={3}>
-                            {c.title}{" "}
-                            <small className={c.bnb}>{c.persent}</small>
+                            {c.title} <small className={c.bnb}>{c.persent}</small>
                           </Title>
                         </Col>
                         <Col xs={6}>
@@ -534,64 +488,26 @@ export function _DashBoardLayout() {
               <Badge.Ribbon text="Mới" color="red">
                 <Card bordered={false} className="criclebox h-full">
                   <Title level={5}> Thống kê dung lượng lưu trữ</Title>
-                  <ProgressChart
-                    percent={dataProgressCharts}
-                    maxSizeGB={CalculateFolder.maxSizeGB}
-                  />
+                  <ProgressChart percent={dataProgressCharts} maxSizeGB={CalculateFolder.maxSizeGB} />
                   <Row guiter={[24, 0]}>
-                    <Col
-                      xs={24}
-                      sm={24}
-                      md={24}
-                      lg={12}
-                      xl={12}
-                      className="mb-24"
-                      style={{ textAlign: "center" }}
-                    >
-                      <RingProgressChart
-                        percent={dataProgressCharts}
-                        maxSizeGB={CalculateFolder.maxSizeGB}
-                      />
+                    <Col xs={24} sm={24} md={24} lg={12} xl={12} className="mb-24" style={{ textAlign: "center" }}>
+                      <RingProgressChart percent={dataProgressCharts} maxSizeGB={CalculateFolder.maxSizeGB} />
                     </Col>
-                    <Col
-                      xs={24}
-                      sm={24}
-                      md={24}
-                      lg={12}
-                      xl={12}
-                      className="mb-24"
-                    >
+                    <Col xs={24} sm={24} md={24} lg={12} xl={12} className="mb-24">
                       <ul>
                         <li>
-                          <Typography.Text strong>
-                            {CalculateFolder.maxSizeGB}GB
-                          </Typography.Text>{" "}
-                          Tổng dung lượng
+                          <Typography.Text strong>{CalculateFolder.maxSizeGB}GB</Typography.Text> Tổng dung lượng
                         </li>
                         <li>
-                          <Typography.Text strong>
-                            {dataProgressCharts}GB
-                          </Typography.Text>{" "}
-                          Dung lượng đã sử dụng
+                          <Typography.Text strong>{dataProgressCharts}GB</Typography.Text> Dung lượng đã sử dụng
                         </li>
                         <li>
                           <Typography.Text strong>
                             {CalculateFolder.maxSizeGB - dataProgressCharts < 0
                               ? `Vượt quá ` +
-                                Math.abs(
-                                  Math.round(
-                                    (CalculateFolder.maxSizeGB -
-                                      dataProgressCharts) *
-                                      100,
-                                  ) / 100,
-                                ) +
+                                Math.abs(Math.round((CalculateFolder.maxSizeGB - dataProgressCharts) * 100) / 100) +
                                 "GB"
-                              : Math.round(
-                                  (CalculateFolder.maxSizeGB -
-                                    dataProgressCharts) *
-                                    100,
-                                ) /
-                                  100 +
+                              : Math.round((CalculateFolder.maxSizeGB - dataProgressCharts) * 100) / 100 +
                                 `GB Dung lượng còn lại`}
                           </Typography.Text>{" "}
                         </li>
@@ -599,17 +515,11 @@ export function _DashBoardLayout() {
                           <li>
                             <Typography.Text strong>
                               Lưu ý:{" "}
-                              {Math.abs(
-                                Math.round(
-                                  (CalculateFolder.maxSizeGB -
-                                    dataProgressCharts) *
-                                    100,
-                                ) / 100,
-                              ) + "GB"}
+                              {Math.abs(Math.round((CalculateFolder.maxSizeGB - dataProgressCharts) * 100) / 100) +
+                                "GB"}
                             </Typography.Text>{" "}
-                            dung lượng vượt quá {CalculateFolder.maxSizeGB}GB sẽ
-                            bị xóa trong 30 ngày tiếp theo, hãy chú ý để tránh
-                            mất dữ liệu.
+                            dung lượng vượt quá {CalculateFolder.maxSizeGB}GB sẽ bị xóa trong 30 ngày tiếp theo, hãy chú
+                            ý để tránh mất dữ liệu.
                           </li>
                         )}
                       </ul>

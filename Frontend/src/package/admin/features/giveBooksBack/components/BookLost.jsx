@@ -8,19 +8,7 @@ import { books } from "../../../api/books";
 import { documentInVoice } from "../../../api/documentInVoice";
 import { individualSample } from "../../../api/individualSample";
 import { ProForm, ProFormGroup, ProFormText } from "@ant-design/pro-form";
-import {
-  Button,
-  Card,
-  Col,
-  Form,
-  Popconfirm,
-  Row,
-  Skeleton,
-  Space,
-  Table,
-  Tag,
-  Typography,
-} from "antd";
+import { Button, Card, Col, Form, Popconfirm, Row, Skeleton, Space, Table, Tag, Typography } from "antd";
 import moment from "moment/moment";
 
 function _BookLost(props) {
@@ -52,11 +40,7 @@ function _BookLost(props) {
             console.log(res);
           })
           .catch((err) => {
-            openNotificationWithIcon(
-              "error",
-              "Lấy sách thất bại",
-              err?.reponese?.data?.message || err?.message,
-            );
+            openNotificationWithIcon("error", "Lấy sách thất bại", err?.reponese?.data?.message || err?.message);
           })
           .finally(() => {});
       } catch (e) {
@@ -83,18 +67,14 @@ function _BookLost(props) {
     documentInVoice
       .ChangeStatusDocumentInvoiceVer2({
         status: 3,
-        listId: SelectedRowKeys,
+        listId: SelectedRowKeys
       })
       .then((res) => {
         openNotificationWithIcon("success", "Thành công", res?.message);
         setPostLength((prevState) => prevState + 1);
       })
       .catch((err) => {
-        openNotificationWithIcon(
-          "error",
-          "Thất bại",
-          err?.response?.data?.message || err?.message,
-        );
+        openNotificationWithIcon("error", "Thất bại", err?.response?.data?.message || err?.message);
       })
       .finally(() => {
         setBtnLoading(false);
@@ -118,14 +98,14 @@ function _BookLost(props) {
                 // Configure the button text
                 searchConfig: {
                   resetText: "reset",
-                  submitText: "submit",
+                  submitText: "submit"
                 },
                 // Configure the properties of the button
                 resetButtonProps: {
                   style: {
                     // Hide the reset button
-                    display: "none",
-                  },
+                    display: "none"
+                  }
                 },
                 submitButtonProps: {},
                 // Fully customize the entire area
@@ -134,7 +114,7 @@ function _BookLost(props) {
                     <Space
                       style={{
                         width: "100%",
-                        justifyContent: "flex-end",
+                        justifyContent: "flex-end"
                       }}
                     >
                       <Popconfirm
@@ -152,30 +132,20 @@ function _BookLost(props) {
                           disabled={SelectedRowKeys.length === 0}
                           danger
                         >
-                          Xác nhận{" "}
-                          {SelectedRowKeys.length > 0
-                            ? `(${SelectedRowKeys.length})`
-                            : ""}
+                          Xác nhận {SelectedRowKeys.length > 0 ? `(${SelectedRowKeys.length})` : ""}
                         </Button>
                       </Popconfirm>
-                    </Space>,
+                    </Space>
                   ];
-                },
+                }
               }}
             >
-              <ProFormGroup
-                label={
-                  <Typography.Title level={5}>Người mượn</Typography.Title>
-                }
-              >
+              <ProFormGroup label={<Typography.Title level={5}>Người mượn</Typography.Title>}>
                 <ProFormText
                   label="Người mượn"
                   showSearch
                   disabled
-                  value={
-                    Users.find((user) => user.id === DocumentInVoice?.userId)
-                      ?.fullname || "Người mượn"
-                  }
+                  value={Users.find((user) => user.id === DocumentInVoice?.userId)?.fullname || "Người mượn"}
                 />
                 <ProFormText
                   label="Số chứng từ"
@@ -198,24 +168,18 @@ function _BookLost(props) {
                     renderCell: (checked, record, index, originNode) => {
                       const isCompleted = record.isCompleted;
                       return !isCompleted && originNode;
-                    },
+                    }
                     // hideSelectAll: true
                   }}
                 >
-                  <Table.Column
-                    title="STT"
-                    render={(text, record, index) => index + 1}
-                  />
+                  <Table.Column title="STT" render={(text, record, index) => index + 1} />
                   <Table.Column
                     title="Tên sách"
                     dataIndex="idDocument"
                     key="idDocument"
                     render={(text) => (
                       <Link to={`/detail-page/${text}`} target="_blank">
-                        {
-                          Books.find((book) => book.document.id === text)
-                            ?.document?.docName
-                        }
+                        {Books.find((book) => book.document.id === text)?.document?.docName}
                       </Link>
                     )}
                   />
@@ -232,12 +196,8 @@ function _BookLost(props) {
                   <Table.Column
                     title="Thời gian"
                     render={(text, record) => {
-                      const dateIn = moment(record.dateIn).format(
-                        "DD-MM-YYYY HH:mm",
-                      );
-                      const dateOut = moment(record.dateOut).format(
-                        "DD-MM-YYYY HH:mm",
-                      );
+                      const dateIn = moment(record.dateIn).format("DD-MM-YYYY HH:mm");
+                      const dateOut = moment(record.dateOut).format("DD-MM-YYYY HH:mm");
                       return (
                         <Space>
                           <Tag color="green-inverse">{dateIn}</Tag>
@@ -250,30 +210,22 @@ function _BookLost(props) {
                   <Table.Column
                     title="Trạng thái"
                     render={(text, record) => {
-                      const status =
-                        DocumentInVoice.documentAndIndividualView.find(
-                          (indi) => indi.idIndividual === record.idIndividual,
-                        )?.status;
+                      const status = DocumentInVoice.documentAndIndividualView.find(
+                        (indi) => indi.idIndividual === record.idIndividual
+                      )?.status;
                       const isCheck = status === 1;
                       return (
-                        <Tag color={isCheck ? "green-inverse" : "red-inverse"}>
-                          {isCheck ? "Đã trả" : "Đang mượn"}
-                        </Tag>
+                        <Tag color={isCheck ? "green-inverse" : "red-inverse"}>{isCheck ? "Đã trả" : "Đang mượn"}</Tag>
                       );
                     }}
                   />
                   <Table.Column
                     title="Đã mất"
                     render={(text, record) => {
-                      const isLostedPhysicalVersion =
-                        DocumentInVoice.documentAndIndividualView.find(
-                          (indi) => indi.idIndividual === record.idIndividual,
-                        )?.isLostedPhysicalVersion;
-                      return (
-                        isLostedPhysicalVersion && (
-                          <Tag color="red-inverse">Đã mất</Tag>
-                        )
-                      );
+                      const isLostedPhysicalVersion = DocumentInVoice.documentAndIndividualView.find(
+                        (indi) => indi.idIndividual === record.idIndividual
+                      )?.isLostedPhysicalVersion;
+                      return isLostedPhysicalVersion && <Tag color="red-inverse">Đã mất</Tag>;
                     }}
                   />
                 </Table>

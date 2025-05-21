@@ -13,27 +13,8 @@ import { generateDocument } from "../../loanSlip";
 import { BookLost } from "../components/BookLost";
 import { BookRenewal } from "../components/BookRenewal";
 import { BookReturn } from "../components/BookReturn";
-import {
-  AuditOutlined,
-  FileSyncOutlined,
-  FrownOutlined,
-  PrinterOutlined,
-} from "@ant-design/icons";
-import {
-  Avatar,
-  Button,
-  Card,
-  Col,
-  Drawer,
-  Image,
-  List,
-  Popconfirm,
-  Row,
-  Space,
-  Table,
-  Tag,
-  Typography,
-} from "antd";
+import { AuditOutlined, FileSyncOutlined, FrownOutlined, PrinterOutlined } from "@ant-design/icons";
+import { Avatar, Button, Card, Col, Drawer, Image, List, Popconfirm, Row, Space, Table, Tag, Typography } from "antd";
 import moment from "moment";
 
 function _GiveBooksBackLayout() {
@@ -47,9 +28,7 @@ function _GiveBooksBackLayout() {
   const [loadingAll, setLoadingAll] = useState(false);
   const [DocumentInVoice, setDocumentInVoice] = useState([]);
   const [Users, setUsers] = useState([]);
-  const [UsersNotInDocumentInvoice, setUsersNotInDocumentInvoice] = useState(
-    [],
-  );
+  const [UsersNotInDocumentInvoice, setUsersNotInDocumentInvoice] = useState([]);
   const [IndividualSample, setIndividualSample] = useState([]);
   const [Books, setBooks] = useState([]);
   const [btnLoading, setBtnLoading] = useState(false);
@@ -62,7 +41,7 @@ function _GiveBooksBackLayout() {
   const [filtersState, setFiltersState] = useState({
     filteredInfo: null,
     sortedInfo: null,
-    pagination: null,
+    pagination: null
   });
 
   const [pagination, setPagination] = useState({
@@ -71,7 +50,7 @@ function _GiveBooksBackLayout() {
     showTotal: (total) => `Tổng số: ${total} bản ghi`,
     showSizeChanger: true,
     showQuickJumper: true,
-    total: 0, // Tổng số lượng dữ liệu
+    total: 0 // Tổng số lượng dữ liệu
   });
 
   // Hàm gọi API để lấy dữ liệu dựa trên số trang và kích thước trang
@@ -97,9 +76,7 @@ function _GiveBooksBackLayout() {
       //     openNotificationWithIcon("error", "Lấy phiếu mượn thất bại", err?.response?.data?.message || err?.message);
       //   });
       documentInVoice
-        .GetListDocumentInvoiceManyParamTest(
-          getRandomDocumentInoviceParams(params),
-        )
+        .GetListDocumentInvoiceManyParamTest(getRandomDocumentInoviceParams(params))
         .then((res) => {
           setDocumentInVoice(res.listDocumentInvoice);
           setUsers(res.listUser);
@@ -108,14 +85,7 @@ function _GiveBooksBackLayout() {
             ...params.pagination,
             total: res?.listDocumentInvoice?.[0]?.total ?? 0,
             showTotal: (total) => `Tổng số: ${total} bản ghi`,
-            pageSizeOptions: [
-              "6",
-              "10",
-              "20",
-              "50",
-              "100",
-              res?.listDocumentInvoice?.[0]?.total,
-            ],
+            pageSizeOptions: ["6", "10", "20", "50", "100", res?.listDocumentInvoice?.[0]?.total]
           });
           // if (pagination.total === 0) {
           //   openNotificationWithIcon("warning", "User này chưa muợn sách");
@@ -123,11 +93,7 @@ function _GiveBooksBackLayout() {
           setLoading(false);
         })
         .catch((err) => {
-          openNotificationWithIcon(
-            "error",
-            "Lấy phiếu mượn thất bại",
-            err?.response?.data?.message || err?.message,
-          );
+          openNotificationWithIcon("error", "Lấy phiếu mượn thất bại", err?.response?.data?.message || err?.message);
           setLoading(false);
         });
     } catch (error) {
@@ -159,7 +125,7 @@ function _GiveBooksBackLayout() {
     // Cập nhật pagination với total mới
     const updatedPagination = {
       ...newPagination,
-      total: newTotal,
+      total: newTotal
     };
 
     // Gọi fetchDocumentInvoice với các tham số đã Cập nhật
@@ -167,13 +133,13 @@ function _GiveBooksBackLayout() {
       sortField: sorter.field,
       sortOrder: sorter.order,
       pagination: updatedPagination,
-      ...filters,
+      ...filters
     });
 
     const filtersState = {
       filteredInfo: combinedFilters,
       sortedInfo: sorter,
-      pagination: updatedPagination,
+      pagination: updatedPagination
     };
     setFiltersState(filtersState);
 
@@ -183,8 +149,8 @@ function _GiveBooksBackLayout() {
       JSON.stringify({
         filteredInfo: combinedFilters,
         sortedInfo: sorter,
-        pagination: newPagination,
-      }),
+        pagination: newPagination
+      })
     );
   };
 
@@ -210,7 +176,7 @@ function _GiveBooksBackLayout() {
       sortField: savedFilters?.sortedInfo?.field || sortedInfo?.field,
       sortOrder: savedFilters?.sortedInfo?.order || sortedInfo?.order,
       pagination: savedFilters?.pagination ?? pagination,
-      ...(savedFilters?.filteredInfo || filteredInfo),
+      ...(savedFilters?.filteredInfo || filteredInfo)
     });
   }, [postLength]);
 
@@ -235,7 +201,7 @@ function _GiveBooksBackLayout() {
             openNotificationWithIcon(
               "error",
               "Lấy danh sách đơn vị thất bại",
-              err?.reponese?.data?.message || err?.message,
+              err?.reponese?.data?.message || err?.message
             );
           }),
 
@@ -263,12 +229,8 @@ function _GiveBooksBackLayout() {
             setIndividualSample(res);
           })
           .catch((err) => {
-            openNotificationWithIcon(
-              "error",
-              "Lấy mã cá biệt thất bại",
-              err?.reponese?.data?.message || err?.message,
-            );
-          }),
+            openNotificationWithIcon("error", "Lấy mã cá biệt thất bại", err?.reponese?.data?.message || err?.message);
+          })
         // books
         //   .getAll(0, 0, 1)
         //   .then((res) => {
@@ -293,18 +255,14 @@ function _GiveBooksBackLayout() {
         console.log(res);
       })
       .catch((err) => {
-        openNotificationWithIcon(
-          "error",
-          "Lấy sách thất bại",
-          err?.reponese?.data?.message || err?.message,
-        );
+        openNotificationWithIcon("error", "Lấy sách thất bại", err?.reponese?.data?.message || err?.message);
       })
       .finally(() => {});
   };
   const getRandomDocumentInoviceParams = (params) => ({
     results: params.pagination?.pageSize,
     page: params.pagination?.current,
-    ...params,
+    ...params
   });
 
   const handlePrint = (id) => {
@@ -313,50 +271,31 @@ function _GiveBooksBackLayout() {
     documentInVoice
       .getById(id)
       .then((respone) => {
-        openNotificationWithIcon(
-          "success",
-          "Thao tác thành công",
-          "Xuất phiếu mượn thành công",
-        );
+        openNotificationWithIcon("success", "Thao tác thành công", "Xuất phiếu mượn thành công");
         // setBooksRecord(respone);
         console.log(respone);
-        respone.fullname = Users.find(
-          (el) => el.id === respone.userId,
-        )?.fullname;
-        respone.userCode = Users.find(
-          (el) => el.id === respone.userId,
-        )?.userCode;
-        respone.unitName = Units.find(
-          (el) =>
-            el.id === Users.find((el) => el.id === respone.userId)?.unitId,
-        )?.unitName;
-        respone.dateOutEdit = moment(respone.dateOut).format(
-          "DD/MM/YYYY HH:mm",
-        );
+        respone.fullname = Users.find((el) => el.id === respone.userId)?.fullname;
+        respone.userCode = Users.find((el) => el.id === respone.userId)?.userCode;
+        respone.unitName = Units.find((el) => el.id === Users.find((el) => el.id === respone.userId)?.unitId)?.unitName;
+        respone.dateOutEdit = moment(respone.dateOut).format("DD/MM/YYYY HH:mm");
         respone.dateInEdit = moment(respone.dateIn).format("DD/MM/YYYY HH:mm");
         respone.documentAndIndividualView.sort(
           (a, b) =>
-            Books.find((el) => el.document.id === a.idDocument)?.document
-              ?.docName.length -
-            Books.find((el) => el.document.id === b.idDocument)?.document
-              ?.docName.length,
+            Books.find((el) => el.document.id === a.idDocument)?.document?.docName.length -
+            Books.find((el) => el.document.id === b.idDocument)?.document?.docName.length
         );
         respone.table = [
           ...respone.documentAndIndividualView.map((item, index) => ({
             index: index + 1,
             documentName: item?.docName,
-            Individual: IndividualSample.find(
-              (el) => el.id === item.idIndividual,
-            )?.numIndividual.split("/")[0],
-            DateIn: moment(
-              respone.documentInvoiceDetail[index].dateIn,
-              "YYYY-MM-DDTHH:mm:ss",
-            ).format("DD/MM/YYYY HH:mm"),
-            DateOut: moment(
-              respone.documentInvoiceDetail[index].dateOut,
-              "YYYY-MM-DDTHH:mm:ss",
-            ).format("DD/MM/YYYY HH:mm"),
-          })),
+            Individual: IndividualSample.find((el) => el.id === item.idIndividual)?.numIndividual.split("/")[0],
+            DateIn: moment(respone.documentInvoiceDetail[index].dateIn, "YYYY-MM-DDTHH:mm:ss").format(
+              "DD/MM/YYYY HH:mm"
+            ),
+            DateOut: moment(respone.documentInvoiceDetail[index].dateOut, "YYYY-MM-DDTHH:mm:ss").format(
+              "DD/MM/YYYY HH:mm"
+            )
+          }))
         ];
         setBooksRecord(respone);
         respone.documentAndIndividualView.forEach((item) => {
@@ -370,22 +309,14 @@ function _GiveBooksBackLayout() {
             console.log(res);
           })
           .catch((err) => {
-            openNotificationWithIcon(
-              "error",
-              "Lấy sách thất bại",
-              err?.reponese?.data?.message || err?.message,
-            );
+            openNotificationWithIcon("error", "Lấy sách thất bại", err?.reponese?.data?.message || err?.message);
           })
           .finally(() => {});
         console.log("response", respone);
         generateDocument(respone);
       })
       .catch((err) => {
-        openNotificationWithIcon(
-          "error",
-          "Xuất phiếu mượn thất bại",
-          err?.response?.data?.message || err?.message,
-        );
+        openNotificationWithIcon("error", "Xuất phiếu mượn thất bại", err?.response?.data?.message || err?.message);
       })
       .finally(() => {
         setBtnLoading(false);
@@ -397,44 +328,28 @@ function _GiveBooksBackLayout() {
     documentInVoice
       .getById(id)
       .then((respone) => {
-        respone.fullname = Users.find(
-          (el) => el.id === respone.userId,
-        )?.fullname;
-        respone.userCode = Users.find(
-          (el) => el.id === respone.userId,
-        )?.userCode;
-        respone.unitName = Units.find(
-          (el) =>
-            el.id === Users.find((el) => el.id === respone.userId)?.unitId,
-        )?.unitName;
-        respone.dateOutEdit = moment(respone.dateOut).format(
-          "DD/MM/YYYY HH:mm",
-        );
+        respone.fullname = Users.find((el) => el.id === respone.userId)?.fullname;
+        respone.userCode = Users.find((el) => el.id === respone.userId)?.userCode;
+        respone.unitName = Units.find((el) => el.id === Users.find((el) => el.id === respone.userId)?.unitId)?.unitName;
+        respone.dateOutEdit = moment(respone.dateOut).format("DD/MM/YYYY HH:mm");
         respone.dateInEdit = moment(respone.dateIn).format("DD/MM/YYYY HH:mm");
         respone.documentAndIndividualView.sort(
           (a, b) =>
-            Books.find((el) => el.document.id === a.idDocument)?.document
-              ?.docName.length -
-            Books.find((el) => el.document.id === b.idDocument)?.document
-              ?.docName.length,
+            Books.find((el) => el.document.id === a.idDocument)?.document?.docName.length -
+            Books.find((el) => el.document.id === b.idDocument)?.document?.docName.length
         );
         respone.table = [
           ...respone.documentAndIndividualView.map((item, index) => ({
             index: index + 1,
-            documentName: Books.find((el) => el.document.id === item.idDocument)
-              ?.document?.docName,
-            Individual: IndividualSample.find(
-              (el) => el.id === item.idIndividual,
-            )?.numIndividual.split("/")[0],
-            DateIn: moment(
-              respone.documentInvoiceDetail[index].dateIn,
-              "YYYY-MM-DDTHH:mm:ss",
-            ).format("DD/MM/YYYY HH:mm"),
-            DateOut: moment(
-              respone.documentInvoiceDetail[index].dateOut,
-              "YYYY-MM-DDTHH:mm:ss",
-            ).format("DD/MM/YYYY HH:mm"),
-          })),
+            documentName: Books.find((el) => el.document.id === item.idDocument)?.document?.docName,
+            Individual: IndividualSample.find((el) => el.id === item.idIndividual)?.numIndividual.split("/")[0],
+            DateIn: moment(respone.documentInvoiceDetail[index].dateIn, "YYYY-MM-DDTHH:mm:ss").format(
+              "DD/MM/YYYY HH:mm"
+            ),
+            DateOut: moment(respone.documentInvoiceDetail[index].dateOut, "YYYY-MM-DDTHH:mm:ss").format(
+              "DD/MM/YYYY HH:mm"
+            )
+          }))
         ];
         setBooksRecord(respone);
 
@@ -449,11 +364,7 @@ function _GiveBooksBackLayout() {
             console.log(res);
           })
           .catch((err) => {
-            openNotificationWithIcon(
-              "error",
-              "Lấy sách thất bại",
-              err?.reponese?.data?.message || err?.message,
-            );
+            openNotificationWithIcon("error", "Lấy sách thất bại", err?.reponese?.data?.message || err?.message);
           })
           .finally(() => {});
         setListIdDocument(tmpListIdDocument);
@@ -469,7 +380,7 @@ function _GiveBooksBackLayout() {
       filters: Users
         ? Array.from(new Set(Users.map((user) => user.id))).map((userId) => ({
             text: Users.find((user) => user.id === userId)?.fullname,
-            value: userId,
+            value: userId
           }))
         : [],
       filteredValue: filtersState?.filteredInfo?.userId || null,
@@ -478,8 +389,7 @@ function _GiveBooksBackLayout() {
       onFilter: (value, record) => {
         return record.userId === value;
       },
-      render: (text, record) =>
-        Users.find((user) => user.id === record.userId)?.fullname,
+      render: (text, record) => Users.find((user) => user.id === record.userId)?.fullname
     },
     {
       title: "Mã người dùng",
@@ -489,7 +399,7 @@ function _GiveBooksBackLayout() {
       filters: Users
         ? Array.from(new Set(Users.map((user) => user.id))).map((userId) => ({
             text: Users.find((user) => user.id === userId)?.userCode,
-            value: userId,
+            value: userId
           }))
         : [],
       filteredValue: filtersState?.filteredInfo?.userCode || null,
@@ -499,7 +409,7 @@ function _GiveBooksBackLayout() {
 
       render: (text, record) => {
         return Users.find((user) => user.id === record.userId)?.userCode;
-      },
+      }
     },
     {
       title: "Số chứng từ",
@@ -508,13 +418,13 @@ function _GiveBooksBackLayout() {
       filters: DocumentInVoice
         ? DocumentInVoice.map((document) => ({
             text: document.invoiceCode,
-            value: document.invoiceCode,
+            value: document.invoiceCode
           }))
         : [],
       filteredValue: filtersState?.filteredInfo?.invoiceCode || null,
       filterMode: "search",
       filterSearch: true,
-      onFilter: (value, record) => String(record.invoiceCode) === String(value),
+      onFilter: (value, record) => String(record.invoiceCode) === String(value)
     },
     {
       title: "Sách mượn",
@@ -534,13 +444,13 @@ function _GiveBooksBackLayout() {
         >
           Xem sách
         </Button>
-      ),
+      )
     },
     {
       title: "Ghi chú",
       dataIndex: "note",
       key: "note",
-      onFilter: (value, record) => record.note?.startsWith(value),
+      onFilter: (value, record) => record.note?.startsWith(value)
     },
     {
       title: "Ngày Tạo",
@@ -549,19 +459,17 @@ function _GiveBooksBackLayout() {
       filters: DocumentInVoice
         ? DocumentInVoice.map((document) => ({
             text: document.createDate,
-            value: document.createDate,
+            value: document.createDate
           }))
         : [],
       filteredValue: filtersState?.filteredInfo?.createDate || null,
       sorter: (a, b) => a.createDate.length - b.createDate.length,
-      sortOrder:
-        sortedInfo.columnKey === "createDate" ? sortedInfo.order : null,
+      sortOrder: sortedInfo.columnKey === "createDate" ? sortedInfo.order : null,
       filterMode: "search",
       filterSearch: true,
       onFilter: (value, record) => record.createDate?.startsWith(value),
 
-      render: (text, record) =>
-        moment(record.createDate).format("DD/MM/YYYY HH:mm:ss"),
+      render: (text, record) => moment(record.createDate).format("DD/MM/YYYY HH:mm:ss")
     },
     {
       title: "Tình trạng",
@@ -570,24 +478,24 @@ function _GiveBooksBackLayout() {
       filters: [
         {
           text: <Tag color="green">Đã trả</Tag>,
-          value: 1,
+          value: 1
         },
         {
           text: <Tag color="yellow">Đang mượn</Tag>,
-          value: 0,
+          value: 0
         },
         {
           text: <Tag color="orange">Đã trả trễ hạn</Tag>,
-          value: 2,
+          value: 2
         },
         {
           text: <Tag color="red">Đã mất</Tag>,
-          value: 3,
+          value: 3
         },
         {
           text: <Tag color="#d62c2c">Đã trả có sách mất</Tag>,
-          value: 4,
-        },
+          value: 4
+        }
       ],
       filteredValue: filtersState?.filteredInfo?.status || null,
       sorter: (a, b) => a.status.length - b.status.length,
@@ -601,7 +509,7 @@ function _GiveBooksBackLayout() {
           1: <Tag color="green">Đã trả</Tag>,
           2: <Tag color="orange">Đã trả trễ hạn</Tag>,
           3: <Tag color="red">Đã mất</Tag>,
-          4: <Tag color="#d62c2c">Đã trả có sách mất</Tag>,
+          4: <Tag color="#d62c2c">Đã trả có sách mất</Tag>
         };
         // const currentDate = moment();
         // //console.log(currentDate);
@@ -609,12 +517,8 @@ function _GiveBooksBackLayout() {
         // console.log(rdaysLate);
         const isOutDate = moment().isAfter(record?.dateOut);
         //console.log(isOutDate);
-        return isOutDate && record.status === 0 ? (
-          <Tag color="#d8b92c">Đang mượn trễ hạn</Tag>
-        ) : (
-          obj[record.status]
-        );
-      },
+        return isOutDate && record.status === 0 ? <Tag color="#d8b92c">Đang mượn trễ hạn</Tag> : obj[record.status];
+      }
     },
     {
       title: "Thao tác",
@@ -622,12 +526,7 @@ function _GiveBooksBackLayout() {
         return (
           <Space size="small">
             <Button
-              disabled={
-                record.status === 1 ||
-                record.status === 3 ||
-                record.status === 2 ||
-                record.status === 4
-              }
+              disabled={record.status === 1 || record.status === 3 || record.status === 2 || record.status === 4}
               type="primary"
               icon={<FileSyncOutlined />}
               onClick={() => {
@@ -640,12 +539,7 @@ function _GiveBooksBackLayout() {
             </Button>
 
             <Button
-              disabled={
-                record.status === 1 ||
-                record.status === 3 ||
-                record.status === 2 ||
-                record.status === 4
-              }
+              disabled={record.status === 1 || record.status === 3 || record.status === 2 || record.status === 4}
               type="dashed"
               loading={btnLoading}
               icon={<AuditOutlined />}
@@ -657,11 +551,7 @@ function _GiveBooksBackLayout() {
               Đã trả
             </Button>
             <Button
-              disabled={
-                record.status === 1 ||
-                record.status === 3 ||
-                record.status === 2
-              }
+              disabled={record.status === 1 || record.status === 3 || record.status === 2}
               type="danger"
               loading={btnLoading}
               icon={<FrownOutlined />}
@@ -689,8 +579,8 @@ function _GiveBooksBackLayout() {
             </Popconfirm>
           </Space>
         );
-      },
-    },
+      }
+    }
   ];
 
   const { Title } = Typography;
@@ -760,9 +650,9 @@ function _GiveBooksBackLayout() {
                   ? {
                       ...col,
                       ellipsis: true,
-                      width: 170,
+                      width: 170
                     }
-                  : { ...col, width: "auto" },
+                  : { ...col, width: "auto" }
               )}
               dataSource={DocumentInVoice}
               loading={loadingAll || loading}
@@ -777,13 +667,7 @@ function _GiveBooksBackLayout() {
   );
 }
 
-function ListBooks({
-  setVisibleListBooks,
-  visibleListBooks,
-  BooksRecord,
-  Books,
-  IndividualSample,
-}) {
+function ListBooks({ setVisibleListBooks, visibleListBooks, BooksRecord, Books, IndividualSample }) {
   return (
     <Drawer
       title="Danh sách mượn"
@@ -795,9 +679,7 @@ function ListBooks({
       visible={visibleListBooks}
       BooksRecord={BooksRecord}
     >
-      <Typography.Title level={5}>
-        Tổng số sách: {BooksRecord?.documentAndIndividualView?.length}
-      </Typography.Title>
+      <Typography.Title level={5}>Tổng số sách: {BooksRecord?.documentAndIndividualView?.length}</Typography.Title>
       <List
         itemLayout="horizontal"
         dataSource={BooksRecord.documentAndIndividualView}
@@ -813,9 +695,7 @@ function ListBooks({
                     src={
                       <Image
                         src={getImageFilterForSizeImage(
-                          Books.find(
-                            (book) => book.document.id === item.idDocument,
-                          )?.listAvatar,
+                          Books.find((book) => book.document.id === item.idDocument)?.listAvatar
                         )}
                       ></Image>
                     }
@@ -826,16 +706,11 @@ function ListBooks({
               }
               title={
                 <Link to={`/detail-page/${item.idDocument}`} target="_blank">
-                  {
-                    Books.find((book) => book.document.id === item.idDocument)
-                      ?.document?.docName
-                  }
+                  {Books.find((book) => book.document.id === item.idDocument)?.document?.docName}
                 </Link>
               }
               description={`Mã đăng ký cá biệt sách: ${
-                IndividualSample.find(
-                  (indi) => indi.id === item.idIndividual,
-                )?.numIndividual.split("/")[0]
+                IndividualSample.find((indi) => indi.id === item.idIndividual)?.numIndividual.split("/")[0]
               }`}
             />
           </List.Item>
@@ -845,5 +720,4 @@ function ListBooks({
   );
 }
 
-export const GiveBooksBackLayout =
-  WithErrorBoundaryCustom(_GiveBooksBackLayout);
+export const GiveBooksBackLayout = WithErrorBoundaryCustom(_GiveBooksBackLayout);

@@ -38,7 +38,7 @@ function _ViewOnlineFlipBookConnect() {
       openNotificationWithIcon(
         "info",
         "Thông báo sự thiếu sót",
-        "Hiện tại chưa có bản điện tử nào, vui lòng quay lại sau, cảm ơn!",
+        "Hiện tại chưa có bản điện tử nào, vui lòng quay lại sau, cảm ơn!"
       );
     }
   }, [Books, loading]);
@@ -53,10 +53,7 @@ function _ViewOnlineFlipBookConnect() {
   const apiUrl = window._env_.REACT_APP_URl_SERVER_APIS_OWNER;
   return (
     <div className="viewOnlineProductLayout">
-      <Space
-        style={{ width: "100vw" }}
-        direction={breakpoint.xl ? "horizontal" : "vertical"}
-      >
+      <Space style={{ width: "100vw" }} direction={breakpoint.xl ? "horizontal" : "vertical"}>
         <Button
           style={{ marginLeft: 20 }}
           onClick={() => {
@@ -69,7 +66,7 @@ function _ViewOnlineFlipBookConnect() {
           className="viewOnlineFlipBooksLayout Container"
           style={{
             border: "1px solid rgba(0, 0, 0, 0.3)",
-            height: "100vh",
+            height: "100vh"
           }}
         >
           <Document
@@ -106,6 +103,4 @@ function _ViewOnlineFlipBookConnect() {
   );
 }
 
-export const ViewOnlineFlipBookConnect = WithErrorBoundaryCustom(
-  _ViewOnlineFlipBookConnect,
-);
+export const ViewOnlineFlipBookConnect = WithErrorBoundaryCustom(_ViewOnlineFlipBookConnect);

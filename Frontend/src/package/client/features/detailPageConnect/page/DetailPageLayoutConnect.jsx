@@ -10,20 +10,7 @@ import LoadingImage from "../../../asset/logo/loading-image.avif";
 import { CarouselLanding } from "../../../components/common/carouselLanding";
 import { openNotificationWithIcon } from "../../../utils";
 import { getImageFilterForSizeImage } from "../../../utils/filterImageConnect";
-import {
-  Button,
-  Col,
-  Divider,
-  Grid,
-  Image,
-  Modal,
-  Row,
-  Select,
-  Skeleton,
-  Space,
-  Spin,
-  Typography,
-} from "antd";
+import { Button, Col, Divider, Grid, Image, Modal, Row, Select, Skeleton, Space, Spin, Typography } from "antd";
 import moment from "moment";
 
 const textBold = { fontWeight: "900", fontSize: "18px" };
@@ -69,11 +56,7 @@ function _DetailPageLayoutConnect() {
             setLoading(false);
           })
           .catch((err) => {
-            openNotificationWithIcon(
-              "error",
-              "get book by id error",
-              err.message,
-            );
+            openNotificationWithIcon("error", "get book by id error", err.message);
           }),
         banner
           .readAll()
@@ -81,11 +64,7 @@ function _DetailPageLayoutConnect() {
             setSlide(res);
           })
           .catch((err) => {
-            openNotificationWithIcon(
-              "error",
-              "Lấy hình ảnh thất bạis",
-              err?.response?.data?.message || err?.message,
-            );
+            openNotificationWithIcon("error", "Lấy hình ảnh thất bạis", err?.response?.data?.message || err?.message);
           }),
         ContactAndIntroduction.read(1, 1, 3)
           .then((res) => {
@@ -95,12 +74,12 @@ function _DetailPageLayoutConnect() {
             openNotificationWithIcon(
               "error",
               "Lấy cấu hình màu sắc thất bại",
-              err?.response?.data?.message || err?.message,
+              err?.response?.data?.message || err?.message
             );
           })
           .finally(() => {
             setLoadingColor(false);
-          }),
+          })
       ]);
     };
     fetchData();
@@ -112,16 +91,11 @@ function _DetailPageLayoutConnect() {
 
   return (
     <Fragment>
-      <Modal
-        title="Chọn chế độ đọc"
-        visible={isModalVisible}
-        onOk={handleOk}
-        onCancel={handleCancel}
-      >
+      <Modal title="Chọn chế độ đọc" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
         <Select
           value={slelecTypeReadBook}
           style={{
-            width: 300,
+            width: 300
           }}
           onChange={handleChangeSelect}
         >
@@ -137,22 +111,15 @@ function _DetailPageLayoutConnect() {
             fontSize: 30,
             fontWeight: "bold",
             marginBottom: 30,
-            borderTopColor: "black",
+            borderTopColor: "black"
           }}
         >
           Thông tin chi tiết
         </Divider>
-        <Row
-          gutter={[30, 0]}
-          style={{ padding: breakpoint.xs ? "0px 10px 0 10px" : 0 }}
-        >
+        <Row gutter={[30, 0]} style={{ padding: breakpoint.xs ? "0px 10px 0 10px" : 0 }}>
           <Col xl={{ span: 10 }} xs={{ span: 24 }}>
             <DetailImage
-              src={
-                book?.listAvatar?.length > 0
-                  ? getImageFilterForSizeImage(book?.listAvatar, 1)
-                  : emptyImage
-              }
+              src={book?.listAvatar?.length > 0 ? getImageFilterForSizeImage(book?.listAvatar, 1) : emptyImage}
             />
           </Col>
           <Col xl={{ span: 14 }} md={{ span: 24 }}>
@@ -185,7 +152,7 @@ function _DetailPageLayoutConnect() {
           style={{
             objectFit: "cover",
             height: breakpoint.xs ? 300 : 550,
-            marginTop: 40,
+            marginTop: 40
           }}
           preview={false}
         ></Image>
@@ -227,17 +194,12 @@ function DetailInfo({
   nameCategory,
   loadingColor,
   contactAndIntroduction,
-  setIsModalVisible,
+  setIsModalVisible
 }) {
   return (
     <div className="detailPage-info">
       {loading ? (
-        <Skeleton.Input
-          active
-          size="small"
-          block
-          style={{ marginBottom: 20 }}
-        />
+        <Skeleton.Input active size="small" block style={{ marginBottom: 20 }} />
       ) : (
         <Typography.Title level={3}>{docName}</Typography.Title>
       )}
@@ -247,8 +209,7 @@ function DetailInfo({
           <Skeleton.Input loading={loading} active size="default" />
         ) : (
           <Typography.Text style={textBold}>
-            Chuyên mục:{" "}
-            <Typography.Text style={text}>{nameCategory}</Typography.Text>
+            Chuyên mục: <Typography.Text style={text}>{nameCategory}</Typography.Text>
           </Typography.Text>
         )}
 
@@ -264,8 +225,7 @@ function DetailInfo({
           <Skeleton.Input loading={loading} active size="default" />
         ) : (
           <Typography.Text style={textBold}>
-            Nhà xuất bản:{" "}
-            <Typography.Text style={text}>{publisher}</Typography.Text>
+            Nhà xuất bản: <Typography.Text style={text}>{publisher}</Typography.Text>
           </Typography.Text>
         )}
 
@@ -274,9 +234,7 @@ function DetailInfo({
         ) : (
           <Typography.Text style={textBold}>
             Xuất bản năm:{" "}
-            <Typography.Text style={text}>
-              {publishYear && moment(publishYear).format("YYYY")}
-            </Typography.Text>
+            <Typography.Text style={text}>{publishYear && moment(publishYear).format("YYYY")}</Typography.Text>
           </Typography.Text>
         )}
 
@@ -284,8 +242,7 @@ function DetailInfo({
           <Skeleton.Input loading={loading} active size="default" />
         ) : (
           <Typography.Text style={textBold}>
-            Giới thiệu:{" "}
-            <Typography.Text style={text}>{description}</Typography.Text>
+            Giới thiệu: <Typography.Text style={text}>{description}</Typography.Text>
           </Typography.Text>
         )}
 
@@ -298,7 +255,7 @@ function DetailInfo({
               style={{
                 color: contactAndIntroduction?.col1 || "white",
                 background: contactAndIntroduction?.col || "#df1f26",
-                marginTop: 20,
+                marginTop: 20
               }}
               onClick={() => {
                 setIsModalVisible(true);
@@ -313,6 +270,4 @@ function DetailInfo({
   );
 }
 
-export const DetailPageLayoutConnect = WithErrorBoundaryCustom(
-  _DetailPageLayoutConnect,
-);
+export const DetailPageLayoutConnect = WithErrorBoundaryCustom(_DetailPageLayoutConnect);

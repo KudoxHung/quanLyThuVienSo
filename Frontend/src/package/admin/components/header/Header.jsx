@@ -8,19 +8,11 @@ import { useNetWork } from "../../../../hooks/useNetWork";
 // import china from "./../../asset/countryFlags/china.png";
 // import japan from "./../../asset/countryFlags/japan.png";
 // import korean from "./../../asset/countryFlags/south-korea.png";
-import {
-  deleteCookie,
-  getCookie,
-  openNotificationWithIcon,
-} from "../../../client/utils";
+import { deleteCookie, getCookie, openNotificationWithIcon } from "../../../client/utils";
 import { users } from "../../api/users";
 import { Sidenav } from "../sideNav/SideNav";
 import vietnam from "./../../asset/countryFlags/vietnam.png";
-import {
-  LogoutOutlined,
-  SearchOutlined,
-  ZoomInOutlined,
-} from "@ant-design/icons";
+import { LogoutOutlined, SearchOutlined, ZoomInOutlined } from "@ant-design/icons";
 import {
   AutoComplete,
   Button,
@@ -36,7 +28,7 @@ import {
   Spin,
   Switch,
   Tooltip,
-  Typography,
+  Typography
 } from "antd";
 
 import "./Header.css";
@@ -167,69 +159,42 @@ const { Option } = Select;
 // );
 
 const logsetting = [
-  <svg
-    width="20"
-    height="20"
-    viewBox="0 0 20 20"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    key={0}
-  >
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" key={0}>
     <path
       fillRule="evenodd"
       clipRule="evenodd"
       d="M11.4892 3.17094C11.1102 1.60969 8.8898 1.60969 8.51078 3.17094C8.26594 4.17949 7.11045 4.65811 6.22416 4.11809C4.85218 3.28212 3.28212 4.85218 4.11809 6.22416C4.65811 7.11045 4.17949 8.26593 3.17094 8.51078C1.60969 8.8898 1.60969 11.1102 3.17094 11.4892C4.17949 11.7341 4.65811 12.8896 4.11809 13.7758C3.28212 15.1478 4.85218 16.7179 6.22417 15.8819C7.11045 15.3419 8.26594 15.8205 8.51078 16.8291C8.8898 18.3903 11.1102 18.3903 11.4892 16.8291C11.7341 15.8205 12.8896 15.3419 13.7758 15.8819C15.1478 16.7179 16.7179 15.1478 15.8819 13.7758C15.3419 12.8896 15.8205 11.7341 16.8291 11.4892C18.3903 11.1102 18.3903 8.8898 16.8291 8.51078C15.8205 8.26593 15.3419 7.11045 15.8819 6.22416C16.7179 4.85218 15.1478 3.28212 13.7758 4.11809C12.8896 4.65811 11.7341 4.17949 11.4892 3.17094ZM10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z"
       fill="#111827"
     ></path>
-  </svg>,
+  </svg>
 ];
 
 const profile = [
-  <svg
-    width="20"
-    height="20"
-    viewBox="0 0 20 20"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    key={0}
-  >
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" key={0}>
     <path
       fillRule="evenodd"
       clipRule="evenodd"
       d="M18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10ZM12 7C12 8.10457 11.1046 9 10 9C8.89543 9 8 8.10457 8 7C8 5.89543 8.89543 5 10 5C11.1046 5 12 5.89543 12 7ZM9.99993 11C7.98239 11 6.24394 12.195 5.45374 13.9157C6.55403 15.192 8.18265 16 9.99998 16C11.8173 16 13.4459 15.1921 14.5462 13.9158C13.756 12.195 12.0175 11 9.99993 11Z"
       fill="#111827"
     ></path>
-  </svg>,
+  </svg>
 ];
 
 const toggler = [
-  <svg
-    width="20"
-    height="20"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 448 512"
-    key={0}
-  >
+  <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" key={0}>
     <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
-  </svg>,
+  </svg>
 ];
 
 const setting = [
-  <svg
-    width="20"
-    height="20"
-    viewBox="0 0 20 20"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    key={0}
-  >
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" key={0}>
     <path
       fillRule="evenodd"
       clipRule="evenodd"
       d="M11.4892 3.17094C11.1102 1.60969 8.8898 1.60969 8.51078 3.17094C8.26594 4.17949 7.11045 4.65811 6.22416 4.11809C4.85218 3.28212 3.28212 4.85218 4.11809 6.22416C4.65811 7.11045 4.17949 8.26593 3.17094 8.51078C1.60969 8.8898 1.60969 11.1102 3.17094 11.4892C4.17949 11.7341 4.65811 12.8896 4.11809 13.7758C3.28212 15.1478 4.85218 16.7179 6.22417 15.8819C7.11045 15.3419 8.26594 15.8205 8.51078 16.8291C8.8898 18.3903 11.1102 18.3903 11.4892 16.8291C11.7341 15.8205 12.8896 15.3419 13.7758 15.8819C15.1478 16.7179 16.7179 15.1478 15.8819 13.7758C15.3419 12.8896 15.8205 11.7341 16.8291 11.4892C18.3903 11.1102 18.3903 8.8898 16.8291 8.51078C15.8205 8.26593 15.3419 7.11045 15.8819 6.22416C16.7179 4.85218 15.1478 3.28212 13.7758 4.11809C12.8896 4.65811 11.7341 4.17949 11.4892 3.17094ZM10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z"
       fill="#111827"
     ></path>
-  </svg>,
+  </svg>
 ];
 const svg = [
   // <svg
@@ -276,12 +241,7 @@ const svg = [
       ></animate>
     </circle>
 
-    <path
-      d="M28 47A28 28 0 0 1 56 75"
-      fill="none"
-      stroke="#fdbd10"
-      strokeWidth="10"
-    >
+    <path d="M28 47A28 28 0 0 1 56 75" fill="none" stroke="#fdbd10" strokeWidth="10">
       <animate
         attributeName="stroke-opacity"
         repeatCount="indefinite"
@@ -291,12 +251,7 @@ const svg = [
         begin="1.1s"
       ></animate>
     </path>
-    <path
-      d="M28 25A50 50 0 0 1 78 75"
-      fill="none"
-      stroke="#0bc514"
-      strokeWidth="10"
-    >
+    <path d="M28 25A50 50 0 0 1 78 75" fill="none" stroke="#0bc514" strokeWidth="10">
       <animate
         attributeName="stroke-opacity"
         repeatCount="indefinite"
@@ -306,7 +261,7 @@ const svg = [
         begin="1.2s"
       ></animate>
     </path>
-  </svg>,
+  </svg>
 ];
 const disconect = [
   <svg
@@ -325,20 +280,13 @@ const disconect = [
       fill="#d81e06"
       p-id="871"
     ></path>
-  </svg>,
+  </svg>
 ];
 const { Title, Text } = Typography;
 
-function _Header({
-  placement,
-  handleSidenavColor,
-  handleSidenavType,
-  handleFixedNavbar,
-}) {
+function _Header({ placement, handleSidenavColor, handleSidenavType, handleFixedNavbar }) {
   const [visible, setVisible] = useState(false);
-  const [sidenavType, setSidenavType] = useState(
-    localStorage.getItem("sideNavType"),
-  );
+  const [sidenavType, setSidenavType] = useState(localStorage.getItem("sideNavType"));
   const [user, setUsers] = useState([]);
   const [disconections, setDisconections] = useState(false);
   const navigate = useNavigate();
@@ -351,11 +299,7 @@ function _Header({
           setDisconections((prev) => (prev = false));
         })
         .catch((err) => {
-          openNotificationWithIcon(
-            "error",
-            "Đăng nhập thất bại",
-            err?.response?.data?.message || err?.message,
-          );
+          openNotificationWithIcon("error", "Đăng nhập thất bại", err?.response?.data?.message || err?.message);
           setDisconections(true);
         });
     }
@@ -375,7 +319,7 @@ function _Header({
       <span
         style={{
           float: "right",
-          color: "blue",
+          color: "blue"
         }}
       >
         more
@@ -390,7 +334,7 @@ function _Header({
         onClick={() => navigate(link)}
         style={{
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: "space-between"
         }}
       >
         {title}
@@ -398,68 +342,68 @@ function _Header({
           <ZoomInOutlined />
         </span>
       </div>
-    ),
+    )
   });
   const [generalSettingsItem, setGeneralSettingsItem] = useState([
     {
       title: "Thông tin năm học",
       name: "Năm học",
-      link: "admin/nam-hoc",
+      link: "admin/nam-hoc"
     },
     {
       title: "Quản lý kho lưu trữ",
       name: "Kho lưu trữ",
-      link: "admin/kho-luu-tru",
+      link: "admin/kho-luu-tru"
     },
     {
       title: "lịch nghỉ lễ",
       name: "Lịch nghỉ lễ",
-      link: "admin/lich-nghi-le",
+      link: "admin/lich-nghi-le"
     },
     {
       title: "Tài khoản",
       name: "Tài khoản",
-      link: "admin/tai-khoan",
-    },
+      link: "admin/tai-khoan"
+    }
   ]);
   const [manageCategories, setManageCategories] = useState([
     {
       title: "Danh mục nhà xuất bản",
       name: "Nhà xuất bản",
-      link: "admin/nha-xuat-ban",
+      link: "admin/nha-xuat-ban"
     },
     {
       title: "Danh mục nhà cung cấp",
       name: "Nhà cung cấp",
-      link: "admin/nha-cung-cap",
+      link: "admin/nha-cung-cap"
     },
     {
       title: "Danh mục đơn vị lớp học, phòng ban",
       name: "Đơn vị",
-      link: "admin/don-vi",
+      link: "admin/don-vi"
     },
     {
       title: "Danh mục ký hiệu phân loại cha",
       name: "Danh mục ký hiệu phân loại",
-      link: "admin/danh-muc-ky-hieu-phan-loai-cha",
+      link: "admin/danh-muc-ky-hieu-phan-loai-cha"
     },
     {
       title: "Danh mục ký hiệu phân loại",
       name: "Ký hiệu",
-      link: "admin/danh-muc-ky-hieu-phan-loai",
-    },
+      link: "admin/danh-muc-ky-hieu-phan-loai"
+    }
   ]);
   const [manageMagazine, setManageMagazine] = useState([
     {
       title: "Danh mục báo, tạp chí",
       name: "Danh mục báo",
-      link: "admin/danh-muc-bao-tap-chi",
+      link: "admin/danh-muc-bao-tap-chi"
     },
     {
       title: "Khai báo ban đầu báo, tạp chí",
       name: "Khai báo báo",
-      link: "admin/danh-muc-bao",
-    },
+      link: "admin/danh-muc-bao"
+    }
     // {
     //   title: "Nhập báo, tạp chí",
     //   name: "Nhập báo",
@@ -475,118 +419,118 @@ function _Header({
     {
       title: "Đăng ký cá biệt từng bộ sách",
       name: "Đăng ký",
-      link: "admin/dang-ky-ca-biet-tung-bo-sach",
+      link: "admin/dang-ky-ca-biet-tung-bo-sach"
     },
     {
       title: "Danh mục sách",
       name: "Danh mục sách",
-      link: "admin/danh-muc-sach",
+      link: "admin/danh-muc-sach"
     },
     {
       title: "Khai báo ban đầu",
       name: "Khai báo sách",
-      link: "admin/khai-bao-sach",
+      link: "admin/khai-bao-sach"
     },
     {
       title: "Nhập sách",
       name: "Nhập sách",
-      link: "admin/nhap-sach",
+      link: "admin/nhap-sach"
     },
     {
       title: "Quản lý phiếu nhập",
       name: "Phiếu nhập",
-      link: "admin/phieu-nhap",
+      link: "admin/phieu-nhap"
     },
     // Trường làm
     {
       title: "Quản lý phiếu xuất",
       name: "Phiếu xuất",
-      link: "admin/phieu-xuat",
-    },
+      link: "admin/phieu-xuat"
+    }
   ]);
   const [manageDocumnetsDigital, setManageDocumnetsDigital] = useState([
     {
       title: "Danh mục Tài liệu điện tử",
       name: "Danh mục Tài liệu",
-      link: "admin/danh-muc-tai-lieu-so",
+      link: "admin/danh-muc-tai-lieu-so"
     },
     {
       title: "Khai báo ban đầu tài liệu điện tử",
       name: "Khai báo tài liệu",
-      link: "admin/khai-bao-tai-lieu",
-    },
+      link: "admin/khai-bao-tai-lieu"
+    }
   ]);
   const [trafficManagement, setTrafficManagement] = useState([
     {
       title: "Lập phiếu mượn",
       name: "Lập phiếu mượn",
-      link: "admin/lap-phieu-muon",
+      link: "admin/lap-phieu-muon"
     },
     {
       title: "Trả sách",
       name: "Trả sách",
-      link: "admin/tra-sach",
+      link: "admin/tra-sach"
     },
     {
       title: "Hồi cố sách",
       name: "Hồi cố sách",
-      link: "admin/hoi-co-sach",
-    },
+      link: "admin/hoi-co-sach"
+    }
   ]);
   const [report, setReport] = useState([
     {
       title: "Danh sách mượn quá hạn chưa trả",
       name: "Mượn quá hạn",
-      link: "admin/muon-qua-han",
+      link: "admin/muon-qua-han"
     },
     {
       title: "Danh sách thống kê mượn của người dùng",
       name: "Thống kê mượn",
-      link: "admin/thong-ke-muon",
+      link: "admin/thong-ke-muon"
     },
     {
       title: "Thống kê sách theo loại",
       name: "Thống kê sách",
-      link: "admin/thong-ke-sach-theo-loai",
+      link: "admin/thong-ke-sach-theo-loai"
     },
     {
       title: "Xuất báo cáo theo loại người dùng",
       name: "Xuất báo cáo",
-      link: "admin/xuat-bao-cao",
+      link: "admin/xuat-bao-cao"
     },
     {
       title: "Thống kê danh sách mượn trễ theo loại người dùng",
       name: "Thống kê quá hạn",
-      link: "admin/thong-ke-muon-qua-han-theo-loai-nguoi-dung",
+      link: "admin/thong-ke-muon-qua-han-theo-loai-nguoi-dung"
     },
     {
       title: "Thống kê danh sách mã cá biệt",
       name: "Thống kê cá biệt",
-      link: "admin/thong-ke-sach-theo-ma-ca-biet",
-    },
+      link: "admin/thong-ke-sach-theo-ma-ca-biet"
+    }
   ]);
 
   const [pageYouRead, setPageYouRead] = useState([
     {
       title: "Thiết lập giới thiệu trang bạn đọc",
       name: "Giới Thiệu",
-      link: "admin/gioi-thieu",
+      link: "admin/gioi-thieu"
     },
     {
       title: "Thiết lập liên hệ trang bạn đọc",
       name: "Liên Hệ",
-      link: "admin/lien-he",
+      link: "admin/lien-he"
     },
     {
       title: "Thiết lập hình ảnh trang bạn đọc",
       name: "Hình ảnh",
-      link: "admin/hinh-anh",
+      link: "admin/hinh-anh"
     },
     {
       title: "Thiết lập màu sắc trang bạn đọc",
       name: "Màu sắc",
-      link: "admin/mau-sac",
-    },
+      link: "admin/mau-sac"
+    }
   ]);
   const [loading, setLoading] = useState(true);
   const [visibleDraw, setVisibleDraw] = useState(false);
@@ -597,83 +541,41 @@ function _Header({
       .then((res) => {
         Promise.all([
           setManageCategories((prev) =>
-            prev.map((item) =>
-              res.listRole.find((i) => i.nameRole === item.name)
-                ? item
-                : undefined,
-            ),
+            prev.map((item) => (res.listRole.find((i) => i.nameRole === item.name) ? item : undefined))
           ),
           setGeneralSettingsItem((prev) =>
-            prev.map((item) =>
-              res.listRole.find((i) => i.nameRole === item.name)
-                ? item
-                : undefined,
-            ),
+            prev.map((item) => (res.listRole.find((i) => i.nameRole === item.name) ? item : undefined))
           ),
           setManageMagazine((prev) =>
-            prev.map((item) =>
-              res.listRole.find((i) => i.nameRole === item.name)
-                ? item
-                : undefined,
-            ),
+            prev.map((item) => (res.listRole.find((i) => i.nameRole === item.name) ? item : undefined))
           ),
 
           setManageBooks((prev) =>
-            prev.map((item) =>
-              res.listRole.find((i) => i.nameRole === item.name)
-                ? item
-                : undefined,
-            ),
+            prev.map((item) => (res.listRole.find((i) => i.nameRole === item.name) ? item : undefined))
           ),
           setManageDocumnetsDigital((prev) =>
-            prev.map((item) =>
-              res.listRole.find((i) => i.nameRole === item.name)
-                ? item
-                : undefined,
-            ),
+            prev.map((item) => (res.listRole.find((i) => i.nameRole === item.name) ? item : undefined))
           ),
 
           setTrafficManagement((prev) =>
-            prev.map((item) =>
-              res.listRole.find((i) => i.nameRole === item.name)
-                ? item
-                : undefined,
-            ),
+            prev.map((item) => (res.listRole.find((i) => i.nameRole === item.name) ? item : undefined))
           ),
 
           setReport((prev) =>
-            prev.map((item) =>
-              res.listRole.find((i) => i.nameRole === item.name)
-                ? item
-                : undefined,
-            ),
+            prev.map((item) => (res.listRole.find((i) => i.nameRole === item.name) ? item : undefined))
           ),
           setPageYouRead((prev) =>
-            prev.map((item) =>
-              res.listRole.find((i) => i.nameRole === item.name)
-                ? item
-                : undefined,
-            ),
+            prev.map((item) => (res.listRole.find((i) => i.nameRole === item.name) ? item : undefined))
           ),
 
-          setManageCategories((prev) =>
-            prev.filter((item) => item !== undefined),
-          ),
+          setManageCategories((prev) => prev.filter((item) => item !== undefined)),
           setReport((prev) => prev.filter((item) => item !== undefined)),
-          setTrafficManagement((prev) =>
-            prev.filter((item) => item !== undefined),
-          ),
-          setManageMagazine((prev) =>
-            prev.filter((item) => item !== undefined),
-          ),
+          setTrafficManagement((prev) => prev.filter((item) => item !== undefined)),
+          setManageMagazine((prev) => prev.filter((item) => item !== undefined)),
           setManageBooks((prev) => prev.filter((item) => item !== undefined)),
-          setManageDocumnetsDigital((prev) =>
-            prev.filter((item) => item !== undefined),
-          ),
-          setGeneralSettingsItem((prev) =>
-            prev.filter((item) => item !== undefined),
-          ),
-          setPageYouRead((prev) => prev.filter((item) => item !== undefined)),
+          setManageDocumnetsDigital((prev) => prev.filter((item) => item !== undefined)),
+          setGeneralSettingsItem((prev) => prev.filter((item) => item !== undefined)),
+          setPageYouRead((prev) => prev.filter((item) => item !== undefined))
         ]);
 
         setLoading(false);
@@ -684,62 +586,37 @@ function _Header({
   }, []);
   const options = [
     {
-      label:
-        generalSettingsItem.length > 0 ? renderTitle("Thiết Lập Chung") : " ",
-      options: [
-        ...generalSettingsItem.map((item) =>
-          renderItem(item?.title, item?.link),
-        ),
-      ],
+      label: generalSettingsItem.length > 0 ? renderTitle("Thiết Lập Chung") : " ",
+      options: [...generalSettingsItem.map((item) => renderItem(item?.title, item?.link))]
     },
     {
-      label:
-        manageCategories.length > 0 ? renderTitle("Quản Lý Danh Mục") : " ",
-      options: [
-        ...manageCategories.map((item) => renderItem(item?.title, item?.link)),
-      ],
+      label: manageCategories.length > 0 ? renderTitle("Quản Lý Danh Mục") : " ",
+      options: [...manageCategories.map((item) => renderItem(item?.title, item?.link))]
     },
     {
-      label:
-        manageMagazine.length > 0 ? renderTitle("Quản Lý Báo Tạp Chí") : " ",
-      options: [
-        ...manageMagazine.map((item) => renderItem(item?.title, item?.link)),
-      ],
+      label: manageMagazine.length > 0 ? renderTitle("Quản Lý Báo Tạp Chí") : " ",
+      options: [...manageMagazine.map((item) => renderItem(item?.title, item?.link))]
     },
     {
       label: manageBooks.length > 0 ? renderTitle("Quản Lý Sách") : " ",
-      options: [
-        ...manageBooks.map((item) => renderItem(item?.title, item?.link)),
-      ],
+      options: [...manageBooks.map((item) => renderItem(item?.title, item?.link))]
     },
     {
-      label:
-        manageDocumnetsDigital.length > 0
-          ? renderTitle("Tài liệu điện tử")
-          : " ",
-      options: [
-        ...manageDocumnetsDigital.map((item) =>
-          renderItem(item?.title, item?.link),
-        ),
-      ],
+      label: manageDocumnetsDigital.length > 0 ? renderTitle("Tài liệu điện tử") : " ",
+      options: [...manageDocumnetsDigital.map((item) => renderItem(item?.title, item?.link))]
     },
     {
-      label:
-        trafficManagement.length > 0 ? renderTitle("Quản Lý lưu Thông") : " ",
-      options: [
-        ...trafficManagement.map((item) => renderItem(item?.title, item?.link)),
-      ],
+      label: trafficManagement.length > 0 ? renderTitle("Quản Lý lưu Thông") : " ",
+      options: [...trafficManagement.map((item) => renderItem(item?.title, item?.link))]
     },
     {
       label: report.length > 0 ? renderTitle("Báo Cáo") : " ",
-      options: [...report.map((item) => renderItem(item?.title, item?.link))],
+      options: [...report.map((item) => renderItem(item?.title, item?.link))]
     },
     {
       label: pageYouRead.length > 0 ? renderTitle("Trang bạn đọc") : " ",
-      options: [
-        ...pageYouRead.map((item) => renderItem(item?.title, item?.link)),
-      ],
-    },
+      options: [...pageYouRead.map((item) => renderItem(item?.title, item?.link))]
+    }
   ];
 
   return (
@@ -814,11 +691,7 @@ function _Header({
             handleFixedNavbar={handleFixedNavbar}
           />
           <Dropdown overlay={menuUserActions} trigger={["click"]}>
-            <Link
-              to="#"
-              className="btn-sign-in"
-              onClick={(e) => e.preventDefault()}
-            >
+            <Link to="#" className="btn-sign-in" onClick={(e) => e.preventDefault()}>
               {profile}
               <span>{user?.data?.fullname}</span>
             </Link>
@@ -881,22 +754,13 @@ function _Header({
               options={options}
               filterOption={(inputValue, option) => {
                 if (option.value && inputValue) {
-                  return (
-                    option.value
-                      .toUpperCase()
-                      .indexOf(inputValue.toUpperCase()) !== -1
-                  );
+                  return option.value.toUpperCase().indexOf(inputValue.toUpperCase()) !== -1;
                 } else {
                   return false;
                 }
               }}
             >
-              <Input
-                className="header-search"
-                placeholder="Tìm kiếm ở đây..."
-                allowClear
-                prefix={<SearchOutlined />}
-              />
+              <Input className="header-search" placeholder="Tìm kiếm ở đây..." allowClear prefix={<SearchOutlined />} />
             </AutoComplete>
           </Spin>
         </Col>
@@ -928,7 +792,7 @@ const menuUserActions = (
       //   key: "1",
       // },
       {
-        type: "divider",
+        type: "divider"
       },
       {
         label: (
@@ -944,8 +808,8 @@ const menuUserActions = (
             <Typography.Text>Đăng xuất</Typography.Text>
           </Space>
         ),
-        key: "2",
-      },
+        key: "2"
+      }
     ]}
   />
 );
@@ -958,7 +822,7 @@ function TransferOptions({
   handleChangeColor,
   handleFixedNavbar,
   handleSidenavColor,
-  sidenavType,
+  sidenavType
 }) {
   return (
     <Drawer
@@ -973,9 +837,7 @@ function TransferOptions({
         <div className="header-top">
           <Title level={4}>
             Trình cấu hình
-            <Text className="subtitle">
-              Xem các tùy chọn bảng điều khiển của chúng tôi.
-            </Text>
+            <Text className="subtitle">Xem các tùy chọn bảng điều khiển của chúng tôi.</Text>
           </Title>
         </div>
 
@@ -1009,8 +871,8 @@ function TransferOptions({
                       errorColor: "#ff4d4f",
                       warningColor: "#faad14",
                       successColor: "#52c41a",
-                      infoColor: "#1890ff",
-                    },
+                      infoColor: "#1890ff"
+                    }
                   });
                 }}
               >
@@ -1064,9 +926,7 @@ function TransferOptions({
             <Title level={5}>Ghim thanh tiêu đề</Title>
             <Switch
               onChange={(e) => handleFixedNavbar(e)}
-              defaultChecked={
-                localStorage.getItem("fixedNavbar") === "true" ? true : false
-              }
+              defaultChecked={localStorage.getItem("fixedNavbar") === "true" ? true : false}
             />
           </div>
           <div className="ant-docment">
@@ -1102,21 +962,9 @@ function TimeCountDown({ disconections }) {
   const { Day, timer } = useClock();
   useEffect(() => {
     if (NetWorkStatus) {
-      openNotificationWithIcon(
-        "success",
-        "Bạn đã trực tuyến trở lại.",
-        "",
-        4.5,
-        "bottomLeft",
-      );
+      openNotificationWithIcon("success", "Bạn đã trực tuyến trở lại.", "", 4.5, "bottomLeft");
     } else {
-      openNotificationWithIcon(
-        "warning",
-        "Bạn đang ngoại tuyến.",
-        "",
-        4.5,
-        "bottomLeft",
-      );
+      openNotificationWithIcon("warning", "Bạn đang ngoại tuyến.", "", 4.5, "bottomLeft");
     }
   }, [NetWorkStatus]);
 
@@ -1126,7 +974,7 @@ function TimeCountDown({ disconections }) {
         level={4}
         style={{
           height: "100%",
-          transform: "translateY(8px)",
+          transform: "translateY(8px)"
         }}
       >
         {Day}
@@ -1138,7 +986,7 @@ function TimeCountDown({ disconections }) {
           transform: "translateY(8px)",
           color: "#e70000",
           fontWeight: "bold",
-          fontSize: 26,
+          fontSize: 26
         }}
       >
         {timer}
@@ -1151,7 +999,7 @@ function TimeCountDown({ disconections }) {
           style={{
             height: "100%",
             transform: "translateY(8px)",
-            color: "red",
+            color: "red"
           }}
         >
           Mất kết nối...

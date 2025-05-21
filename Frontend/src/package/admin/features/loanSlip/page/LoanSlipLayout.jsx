@@ -8,12 +8,7 @@ import { books } from "../../../api/books";
 import { documentInVoice } from "../../../api/documentInVoice";
 import { individualSample } from "../../../api/individualSample";
 import PhieuMuonSach from "./../../../asset/files/PhieuMuonTaiLieu.docx";
-import {
-  BarcodeOutlined,
-  MinusCircleOutlined,
-  PlusOutlined,
-  SearchOutlined,
-} from "@ant-design/icons";
+import { BarcodeOutlined, MinusCircleOutlined, PlusOutlined, SearchOutlined } from "@ant-design/icons";
 import { ProForm, ProFormSelect, ProFormTextArea } from "@ant-design/pro-form";
 import {
   Button,
@@ -29,7 +24,7 @@ import {
   Space,
   Spin,
   Tooltip,
-  Typography,
+  Typography
 } from "antd";
 import Docxtemplater from "docxtemplater";
 import { saveAs } from "file-saver";
@@ -48,8 +43,7 @@ function _LoanSlipLayout() {
   const [IndividualSample, setIndividualSample] = useState([]);
   const [documentIdRef, setDocumentIdRef] = useState([]);
   const [Books, setBooks] = useState([]);
-  const [BooksFilterIndividualSample, setBooksFilterIndividualSample] =
-    useState([]);
+  const [BooksFilterIndividualSample, setBooksFilterIndividualSample] = useState([]);
   const [btnLoading, setBtnLoading] = useState(false);
   const [valueBarcode, setValueBarcode] = useState("");
   const [listBooksbyBarcode, setListBooksbyBarcode] = useState([]);
@@ -73,7 +67,7 @@ function _LoanSlipLayout() {
             openNotificationWithIcon(
               "error",
               "Lấy danh sách đơn vị thất bại",
-              err?.reponese?.data?.message || err?.message,
+              err?.reponese?.data?.message || err?.message
             );
           }),
         individualSample
@@ -82,11 +76,7 @@ function _LoanSlipLayout() {
             setIndividuals(res);
           })
           .catch((err) => {
-            openNotificationWithIcon(
-              "error",
-              "Lấy mã cá biệt thất bại",
-              err?.reponese?.data?.message || err?.message,
-            );
+            openNotificationWithIcon("error", "Lấy mã cá biệt thất bại", err?.reponese?.data?.message || err?.message);
           }),
         users
           .getAllUsersNotBlock(0, 0)
@@ -95,11 +85,7 @@ function _LoanSlipLayout() {
             setLoading(false);
           })
           .catch((err) => {
-            openNotificationWithIcon(
-              "error",
-              "Lấy danh sách người dùng thất bại",
-              err?.reponese?.data?.message,
-            );
+            openNotificationWithIcon("error", "Lấy danh sách người dùng thất bại", err?.reponese?.data?.message);
             setLoading(false);
           }),
         books
@@ -109,13 +95,9 @@ function _LoanSlipLayout() {
             setLoading(false);
           })
           .catch((err) => {
-            openNotificationWithIcon(
-              "error",
-              "Lấy danh sách sách thất bại",
-              err?.reponese?.data?.message,
-            );
+            openNotificationWithIcon("error", "Lấy danh sách sách thất bại", err?.reponese?.data?.message);
             setLoading(false);
-          }),
+          })
       ]);
     };
     fecthData();
@@ -130,26 +112,21 @@ function _LoanSlipLayout() {
             if (res.individuals !== null) {
               setIndividualSample((pre) => {
                 const newIndividualSample = pre.map((item, indexs, arr) =>
-                  index === indexs
-                    ? (arr[indexs] = [...res?.individuals])
-                    : item,
+                  index === indexs ? (arr[indexs] = [...res?.individuals]) : item
                 );
                 return [...newIndividualSample];
               });
             } else {
               setIndividualSample((pre) => {
                 const newIndividualSample = pre.map((item, indexs, arr) =>
-                  index === indexs ? (arr[indexs] = []) : item,
+                  index === indexs ? (arr[indexs] = []) : item
                 );
                 return [...newIndividualSample];
               });
             }
           })
           .catch((err) => {
-            console.log(
-              `Lấy mã cá biệt theo id ${id} thất bại`,
-              err?.reponese?.data?.message,
-            );
+            console.log(`Lấy mã cá biệt theo id ${id} thất bại`, err?.reponese?.data?.message);
           });
       }
     });
@@ -173,17 +150,12 @@ function _LoanSlipLayout() {
         .GetSpineByBarcode(e)
         .then((res) => {
           if (res.barcode == null) {
-            openNotificationWithIcon(
-              "info",
-              "Bản sách đã mất, không tồn tại hoặc đã được mượn."`Số mã vạch ${e}`,
-            );
+            openNotificationWithIcon("info", "Bản sách đã mất, không tồn tại hoặc đã được mượn."`Số mã vạch ${e}`);
             setBtnLoading(false);
             setValueBarcode("");
           } else {
             setListBooksbyBarcode((prev) =>
-              prev.find((item) => item.barcode === res.barcode)
-                ? [...prev]
-                : [...prev, res],
+              prev.find((item) => item.barcode === res.barcode) ? [...prev] : [...prev, res]
             );
             setBtnLoading(false);
             setValueBarcode("");
@@ -193,7 +165,7 @@ function _LoanSlipLayout() {
           openNotificationWithIcon(
             "error",
             "Lấy thông tin sách theo mã vạch thất bại",
-            err?.reponese?.data?.message || err?.message,
+            err?.reponese?.data?.message || err?.message
           );
           setValueBarcode("");
           setBtnLoading(false);
@@ -204,10 +176,7 @@ function _LoanSlipLayout() {
   const onFinish = (values) => {
     console.log(1);
     if (listBooksbyBarcode.length === 0) {
-      if (
-        values?.documentAndIndividual?.length === undefined ||
-        values?.documentAndIndividual?.length === 0
-      ) {
+      if (values?.documentAndIndividual?.length === undefined || values?.documentAndIndividual?.length === 0) {
         openNotificationWithIcon("warning", "Vui lòng chọn sách");
         return;
       }
@@ -231,7 +200,7 @@ function _LoanSlipLayout() {
       } else {
         acc.push({
           idDocument: cur.idDocument,
-          idIndividual: [cur.idIndividual],
+          idIndividual: [cur.idIndividual]
         });
       }
       return acc;
@@ -248,56 +217,37 @@ function _LoanSlipLayout() {
           acc.push(cur);
         }
         return acc;
-      }, []),
+      }, [])
     }));
 
     documentInVoice
       .create(values)
       .then((res) => {
-        openNotificationWithIcon(
-          "success",
-          "Lập phiếu mượn thành công",
-          res?.message,
-        );
+        openNotificationWithIcon("success", "Lập phiếu mượn thành công", res?.message);
         setBtnLoading(false);
 
         documentInVoice
           .getById(res?.id)
           .then((respone) => {
             //openNotificationWithIcon("success", "Xuất phiếu mượn thành công");
-            respone.fullname = Users.find(
-              (el) => el.id === respone.userId,
-            )?.fullname;
-            respone.userCode = Users.find(
-              (el) => el.id === respone.userId,
-            )?.userCode;
+            respone.fullname = Users.find((el) => el.id === respone.userId)?.fullname;
+            respone.userCode = Users.find((el) => el.id === respone.userId)?.userCode;
             respone.unitName = Units.find(
-              (el) =>
-                el.id === Users.find((el) => el.id === respone.userId)?.unitId,
+              (el) => el.id === Users.find((el) => el.id === respone.userId)?.unitId
             )?.unitName;
-            respone.dateOutEdit = moment(respone.dateOut).format(
-              "DD/MM/YYYY HH:mm",
-            );
-            respone.dateInEdit = moment(respone.dateIn).format(
-              "DD/MM/YYYY HH:mm",
-            );
+            respone.dateOutEdit = moment(respone.dateOut).format("DD/MM/YYYY HH:mm");
+            respone.dateInEdit = moment(respone.dateIn).format("DD/MM/YYYY HH:mm");
             respone.documentAndIndividualView.sort(
               (a, b) =>
-                Books.find((el) => el.document.id === a.idDocument)?.document
-                  ?.docName.length -
-                Books.find((el) => el.document.id === b.idDocument)?.document
-                  ?.docName.length,
+                Books.find((el) => el.document.id === a.idDocument)?.document?.docName.length -
+                Books.find((el) => el.document.id === b.idDocument)?.document?.docName.length
             );
             respone.table = [
               ...respone.documentAndIndividualView.map((item, index) => ({
                 index: index + 1,
-                documentName: Books.find(
-                  (el) => el.document.id === item.idDocument,
-                )?.document?.docName,
-                Individual: Individuals.find(
-                  (el) => el.id === item.idIndividual,
-                )?.numIndividual.split("/")[0],
-              })),
+                documentName: Books.find((el) => el.document.id === item.idDocument)?.document?.docName,
+                Individual: Individuals.find((el) => el.id === item.idIndividual)?.numIndividual.split("/")[0]
+              }))
             ];
 
             // generateDocument(respone); Cho nay de in phieu muon khi bam xac nhap hoan thanh lap phieu muon
@@ -312,11 +262,7 @@ function _LoanSlipLayout() {
       })
       .catch((err) => {
         console.log("err", err);
-        openNotificationWithIcon(
-          "error",
-          "Lập phiếu mượn thất bại",
-          `${err?.response?.data?.message}`,
-        );
+        openNotificationWithIcon("error", "Lập phiếu mượn thất bại", `${err?.response?.data?.message}`);
         setBtnLoading(false);
       });
   };
@@ -336,14 +282,14 @@ function _LoanSlipLayout() {
                   // Configure the button text
                   searchConfig: {
                     resetText: "reset",
-                    submitText: "submit",
+                    submitText: "submit"
                   },
                   // Configure the properties of the button
                   resetButtonProps: {
                     style: {
                       // Hide the reset button
-                      display: "none",
-                    },
+                      display: "none"
+                    }
                   },
                   submitButtonProps: {},
                   // Fully customize the entire area
@@ -353,16 +299,11 @@ function _LoanSlipLayout() {
                         style={{
                           justifyContent: "flex-end",
                           width: "100%",
-                          marginTop: 20,
+                          marginTop: 20
                         }}
                         wrap
                       >
-                        <Button
-                          size="large"
-                          key="rest"
-                          onClick={() => props.form?.resetFields()}
-                          loading={btnLoading}
-                        >
+                        <Button size="large" key="rest" onClick={() => props.form?.resetFields()} loading={btnLoading}>
                           Cài lại
                         </Button>
                         <Button
@@ -374,26 +315,22 @@ function _LoanSlipLayout() {
                         >
                           Xác nhận
                         </Button>
-                      </Space>,
+                      </Space>
                     ];
-                  },
+                  }
                 }}
               >
                 <Row gutter={[24, 0]}>
                   <Col xs={24} sm={24} md={24} lg={12} xl={12}>
                     <Spin spinning={Users.length === 0}>
                       <Form.Item
-                        label={
-                          <Typography.Title level={5}>
-                            Tìm người mượn thủ công
-                          </Typography.Title>
-                        }
+                        label={<Typography.Title level={5}>Tìm người mượn thủ công</Typography.Title>}
                         name={"userId"}
                         rules={[
                           {
                             required: true,
-                            message: "Vui lòng chọn người mượn",
-                          },
+                            message: "Vui lòng chọn người mượn"
+                          }
                         ]}
                       >
                         <Select
@@ -404,17 +341,10 @@ function _LoanSlipLayout() {
                           options={[
                             ...Users.map((user) => ({
                               value: user?.id,
-                              label:
-                                user?.fullname +
-                                " - " +
-                                user?.userCode +
-                                " - " +
-                                user?.email,
-                            })),
+                              label: user?.fullname + " - " + user?.userCode + " - " + user?.email
+                            }))
                           ]}
-                          onChange={() =>
-                            form.setFieldsValue({ userIdBarCode: "" })
-                          }
+                          onChange={() => form.setFieldsValue({ userIdBarCode: "" })}
                         />
                       </Form.Item>
                     </Spin>
@@ -422,11 +352,7 @@ function _LoanSlipLayout() {
                   <Col xs={24} sm={24} md={24} lg={12} xl={12}>
                     <Spin spinning={Users.length === 0}>
                       <Form.Item
-                        label={
-                          <Typography.Title level={5}>
-                            Tìm người mượn bằng quét mã vạch
-                          </Typography.Title>
-                        }
+                        label={<Typography.Title level={5}>Tìm người mượn bằng quét mã vạch</Typography.Title>}
                         name={"userIdBarCode"}
                       >
                         <Input
@@ -437,12 +363,10 @@ function _LoanSlipLayout() {
                             const value = e.target.value;
                             if (value.length !== 0) {
                               setTimeout(() => {
-                                const user = Users.find(
-                                  (el) => el.userCode === value,
-                                );
+                                const user = Users.find((el) => el.userCode === value);
                                 if (user) {
                                   form.setFieldsValue({
-                                    userId: user.id,
+                                    userId: user.id
                                   });
                                 }
                               }, 500);
@@ -454,18 +378,14 @@ function _LoanSlipLayout() {
                   </Col>
                 </Row>
                 <Form.Item
-                  label={
-                    <Typography.Title level={5}>
-                      Thời gian mượn
-                    </Typography.Title>
-                  }
+                  label={<Typography.Title level={5}>Thời gian mượn</Typography.Title>}
                   name="restdate"
                   required
                   rules={[
                     {
                       required: true,
-                      message: "Vui lòng chọn thời gian",
-                    },
+                      message: "Vui lòng chọn thời gian"
+                    }
                   ]}
                 >
                   <DatePicker.RangePicker
@@ -479,45 +399,30 @@ function _LoanSlipLayout() {
                       "Mượn 30 ngày": [moment(), moment().add(30, "days")],
                       "Mượn 60 ngày": [moment(), moment().add(60, "days")],
                       "Mượn 90 ngày": [moment(), moment().add(90, "days")],
-                      "Tháng này": [
-                        moment().startOf("month"),
-                        moment().endOf("month"),
-                      ],
+                      "Tháng này": [moment().startOf("month"), moment().endOf("month")]
                     }}
                     format="DD-MM-YYYY HH:mm"
                     placeholder={["Ngày mượn", "Ngày trả"]}
                   />
                 </Form.Item>
-                <ProFormTextArea
-                  name={"note"}
-                  label="Ghi chú"
-                  width="lg"
-                  placeholder={"..."}
-                />
+                <ProFormTextArea name={"note"} label="Ghi chú" width="lg" placeholder={"..."} />
                 <Input.TextArea
                   placeholder={` Quét mã vạch ở đây`}
                   rows={3}
                   onChange={(e) => handleBarcodeScanner(e.target.value)}
                   style={{
-                    marginBottom: 15,
+                    marginBottom: 15
                   }}
                   value={valueBarcode}
                 />
                 <Row gutter={[24, 24]}>
                   <Col xs={24} sm={24} md={24} lg={12} xl={12}>
-                    <Form.List
-                      name="documentAndIndividual"
-                      required
-                      style={{ height: 500, overflow: "auto" }}
-                    >
+                    <Form.List name="documentAndIndividual" required style={{ height: 500, overflow: "auto" }}>
                       {(fields, { add, remove }) => (
                         <>
                           {fields.map(({ key, name, ...restField }) => (
                             <Space key={name} direction="horizontal">
-                              <Form.Item
-                                {...restField}
-                                style={{ marginBottom: 0 }}
-                              >
+                              <Form.Item {...restField} style={{ marginBottom: 0 }}>
                                 <Space key={name} direction="horizontal">
                                   <ProFormSelect
                                     style={{ width: 300 }}
@@ -527,11 +432,8 @@ function _LoanSlipLayout() {
                                     name={[name, "idDocument"]}
                                     onChange={(value) => {
                                       setIndividualSampleId((pre) => {
-                                        const newIndividualSampleId = pre.map(
-                                          (item, index, arr) =>
-                                            index === name
-                                              ? (arr[index] = value)
-                                              : item,
+                                        const newIndividualSampleId = pre.map((item, index, arr) =>
+                                          index === name ? (arr[index] = value) : item
                                         );
                                         return [...newIndividualSampleId];
                                       });
@@ -540,18 +442,16 @@ function _LoanSlipLayout() {
                                     optionFilterProp="label"
                                     placeholder={"Sách mượn"}
                                     options={[
-                                      ...BooksFilterIndividualSample.map(
-                                        (book) => ({
-                                          value: book?.document?.id,
-                                          label: book?.document?.docName,
-                                        }),
-                                      ),
+                                      ...BooksFilterIndividualSample.map((book) => ({
+                                        value: book?.document?.id,
+                                        label: book?.document?.docName
+                                      }))
                                     ]}
                                     rules={[
                                       {
                                         required: true,
-                                        message: "Vui lòng chọn sách",
-                                      },
+                                        message: "Vui lòng chọn sách"
+                                      }
                                     ]}
                                   />
                                   <ProFormSelect
@@ -563,21 +463,15 @@ function _LoanSlipLayout() {
                                     onChange={(value) => {
                                       if (value !== undefined) {
                                         setDocumentIdRef((prev) => {
-                                          const newDocumentIdRef = prev.map(
-                                            (item, index, arr) =>
-                                              index === name
-                                                ? (arr[index] = true)
-                                                : item,
+                                          const newDocumentIdRef = prev.map((item, index, arr) =>
+                                            index === name ? (arr[index] = true) : item
                                           );
                                           return [...newDocumentIdRef];
                                         });
                                       } else {
                                         setDocumentIdRef((prev) => {
-                                          const newDocumentIdRef = prev.map(
-                                            (item, index, arr) =>
-                                              index === name
-                                                ? (arr[index] = false)
-                                                : item,
+                                          const newDocumentIdRef = prev.map((item, index, arr) =>
+                                            index === name ? (arr[index] = false) : item
                                           );
                                           return [...newDocumentIdRef];
                                         });
@@ -585,25 +479,18 @@ function _LoanSlipLayout() {
                                     }}
                                     placeholder={"Mã cá biệt"}
                                     options={[
-                                      ...IndividualSample[name]?.map(
-                                        (IndividualSample) => ({
-                                          value: IndividualSample?.id,
-                                          label:
-                                            IndividualSample?.numIndividual.split(
-                                              "/",
-                                            )[0],
-                                        }),
-                                      ),
+                                      ...IndividualSample[name]?.map((IndividualSample) => ({
+                                        value: IndividualSample?.id,
+                                        label: IndividualSample?.numIndividual.split("/")[0]
+                                      }))
                                     ]}
                                     rules={[
                                       {
                                         required: true,
-                                        message: "Vui lòng chọn mã cá biệt",
-                                      },
+                                        message: "Vui lòng chọn mã cá biệt"
+                                      }
                                     ]}
-                                    disabled={
-                                      IndividualSample[name].length === 0
-                                    }
+                                    disabled={IndividualSample[name].length === 0}
                                   />
                                 </Space>
                               </Form.Item>
@@ -646,9 +533,7 @@ function _LoanSlipLayout() {
                     </Form.List>
                   </Col>
                   <Col xs={24} sm={24} md={24} lg={12} xl={12}>
-                    <Card
-                      title={`Danh sách sách mượn - Tổng sách : ${listBooksbyBarcode.length} `}
-                    >
+                    <Card title={`Danh sách sách mượn - Tổng sách : ${listBooksbyBarcode.length} `}>
                       <List
                         showSearch
                         loading={false}
@@ -657,7 +542,7 @@ function _LoanSlipLayout() {
                         style={{
                           width: "100%",
                           overflow: "auto",
-                          height: "400px",
+                          height: "400px"
                         }}
                         renderItem={(item, index) => (
                           <List.Item
@@ -670,43 +555,25 @@ function _LoanSlipLayout() {
                                     return [...prev];
                                   })
                                 }
-                              />,
+                              />
                             ]}
                           >
-                            <Skeleton
-                              avatar
-                              title={false}
-                              loading={btnLoading}
-                              active
-                            >
+                            <Skeleton avatar title={false} loading={btnLoading} active>
                               <List.Item.Meta
                                 title={
                                   <Tooltip
                                     title={
-                                      Books.find(
-                                        (book) =>
-                                          book.document.id === item?.idDocument,
-                                      )?.document?.docName
+                                      Books.find((book) => book.document.id === item?.idDocument)?.document?.docName
                                     }
                                   >
                                     <Typography.Text>
-                                      {Books.find(
-                                        (book) =>
-                                          book.document.id === item?.idDocument,
-                                      )?.document?.docName?.length > 22
+                                      {Books.find((book) => book.document.id === item?.idDocument)?.document?.docName
+                                        ?.length > 22
                                         ? `${Books.find(
-                                            (book) =>
-                                              book.document.id ===
-                                              item?.idDocument,
-                                          )?.document?.docName?.slice(
-                                            0,
-                                            22,
-                                          )}...`
-                                        : Books.find(
-                                            (book) =>
-                                              book.document.id ===
-                                              item?.idDocument,
-                                          )?.document?.docName}
+                                            (book) => book.document.id === item?.idDocument
+                                          )?.document?.docName?.slice(0, 22)}...`
+                                        : Books.find((book) => book.document.id === item?.idDocument)?.document
+                                            ?.docName}
                                     </Typography.Text>
                                   </Tooltip>
                                 }
@@ -741,7 +608,7 @@ export const generateDocument = (data) => {
     var zip = new PizZip(content);
     var doc = new Docxtemplater(zip, {
       paragraphLoop: true,
-      linebreaks: true,
+      linebreaks: true
     });
     doc.setData(data);
     try {
@@ -749,10 +616,7 @@ export const generateDocument = (data) => {
     } catch (error) {
       function replaceErrors(key, value) {
         if (value instanceof Error) {
-          return Object.getOwnPropertyNames(value).reduce(function (
-            error,
-            key,
-          ) {
+          return Object.getOwnPropertyNames(value).reduce(function (error, key) {
             error[key] = value[key];
             return error;
           }, {});
@@ -776,8 +640,7 @@ export const generateDocument = (data) => {
     }
     var out = doc.getZip().generate({
       type: "blob",
-      mimeType:
-        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      mimeType: "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
     }); //Output the document using Data-URI
     saveAs(out, `PhieuMuonTaiLieu-${data?.invoiceCode}.docx`);
   });
