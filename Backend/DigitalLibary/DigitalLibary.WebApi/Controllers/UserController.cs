@@ -615,6 +615,8 @@ namespace DigitalLibary.WebApi.Controllers
                 Random generator = new Random();
                 string CodeActive = generator.Next(0, 1000000).ToString("D6");
 
+                
+
                 if (userByEmail == null)
                 {
                     //save user
@@ -696,6 +698,10 @@ namespace DigitalLibary.WebApi.Controllers
                 User_Role user_Role = _userRepository.getRoleOfUser(userByEmail.Id);
                 // get role of user login current
                 Role role = _userRepository.getUserRolebyId(new Guid(user_Role.IdRole));
+
+                string password = "Admin@123";
+                string hash = BCrypt.Net.BCrypt.HashPassword(password);
+                Console.WriteLine("Hash BCrypt: " + hash);
 
                 if (userByEmail == null) return BadRequest(new { message = "Tài khoản không tồn tại !" });
 

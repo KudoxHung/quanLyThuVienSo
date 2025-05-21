@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\BCTN\\thuvienso_v1\\Backend\\DigitalLibary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7A972C1-F23E-41C5-82FF-9442348774FB}|DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj|c:\\bctn\\thuvienso_v1\\backend\\digitallibary\\digitallibary.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E7A972C1-F23E-41C5-82FF-9442348774FB}|DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj|solutionrelative:digitallibary.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7A972C1-F23E-41C5-82FF-9442348774FB}|DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj|c:\\bctn\\thuvienso_v1\\backend\\digitallibary\\digitallibary.webapi\\common\\sendmail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7A972C1-F23E-41C5-82FF-9442348774FB}|DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj|solutionrelative:digitallibary.webapi\\common\\sendmail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E7A972C1-F23E-41C5-82FF-9442348774FB}|DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj|c:\\bctn\\thuvienso_v1\\backend\\digitallibary\\digitallibary.webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7A972C1-F23E-41C5-82FF-9442348774FB}|DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj|solutionrelative:digitallibary.webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7A972C1-F23E-41C5-82FF-9442348774FB}|DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj|c:\\bctn\\thuvienso_v1\\backend\\digitallibary\\digitallibary.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E7A972C1-F23E-41C5-82FF-9442348774FB}|DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj|solutionrelative:digitallibary.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E7A972C1-F23E-41C5-82FF-9442348774FB}|DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj|c:\\bctn\\thuvienso_v1\\backend\\digitallibary\\digitallibary.webapi\\controllers\\analystcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7A972C1-F23E-41C5-82FF-9442348774FB}|DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj|solutionrelative:digitallibary.webapi\\controllers\\analystcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35DEF08A-0492-48D9-8049-D5D115ABF4D4}|DigitalLibary.Service\\DigitalLibary.Service.csproj|c:\\bctn\\thuvienso_v1\\backend\\digitallibary\\digitallibary.service\\digitallibary.service.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{35DEF08A-0492-48D9-8049-D5D115ABF4D4}|DigitalLibary.Service\\DigitalLibary.Service.csproj|solutionrelative:digitallibary.service\\digitallibary.service.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E7A972C1-F23E-41C5-82FF-9442348774FB}|DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj|c:\\bctn\\thuvienso_v1\\backend\\digitallibary\\digitallibary.webapi\\digitallibary.webapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{E7A972C1-F23E-41C5-82FF-9442348774FB}|DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj|solutionrelative:digitallibary.webapi\\digitallibary.webapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7A972C1-F23E-41C5-82FF-9442348774FB}|DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj|c:\\bctn\\thuvienso_v1\\backend\\digitallibary\\digitallibary.webapi\\controllers\\contactandintroductioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7A972C1-F23E-41C5-82FF-9442348774FB}|DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj|solutionrelative:digitallibary.webapi\\controllers\\contactandintroductioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35DEF08A-0492-48D9-8049-D5D115ABF4D4}|DigitalLibary.Service\\DigitalLibary.Service.csproj|c:\\bctn\\thuvienso_v1\\backend\\digitallibary\\digitallibary.service\\repository\\repositoryipl\\documentinvoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35DEF08A-0492-48D9-8049-D5D115ABF4D4}|DigitalLibary.Service\\DigitalLibary.Service.csproj|solutionrelative:digitallibary.service\\repository\\repositoryipl\\documentinvoicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7A972C1-F23E-41C5-82FF-9442348774FB}|DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj|c:\\bctn\\thuvienso_v1\\backend\\digitallibary\\digitallibary.webapi\\common\\sendmail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7A972C1-F23E-41C5-82FF-9442348774FB}|DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj|solutionrelative:digitallibary.webapi\\common\\sendmail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35DEF08A-0492-48D9-8049-D5D115ABF4D4}|DigitalLibary.Service\\DigitalLibary.Service.csproj|c:\\bctn\\thuvienso_v1\\backend\\digitallibary\\digitallibary.service\\digitallibary.service.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{35DEF08A-0492-48D9-8049-D5D115ABF4D4}|DigitalLibary.Service\\DigitalLibary.Service.csproj|solutionrelative:digitallibary.service\\digitallibary.service.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,23 +42,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "DocumentInvoiceRepository.cs",
+              "DocumentMoniker": "C:\\BCTN\\thuvienso_v1\\Backend\\DigitalLibary\\DigitalLibary.Service\\Repository\\RepositoryIPL\\DocumentInvoiceRepository.cs",
+              "RelativeDocumentMoniker": "DigitalLibary.Service\\Repository\\RepositoryIPL\\DocumentInvoiceRepository.cs",
+              "ToolTip": "C:\\BCTN\\thuvienso_v1\\Backend\\DigitalLibary\\DigitalLibary.Service\\Repository\\RepositoryIPL\\DocumentInvoiceRepository.cs",
+              "RelativeToolTip": "DigitalLibary.Service\\Repository\\RepositoryIPL\\DocumentInvoiceRepository.cs",
+              "ViewState": "AgIAAFwDAAAAAAAAAAAswGYDAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T16:56:03.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\BCTN\\thuvienso_v1\\Backend\\DigitalLibary\\DigitalLibary.WebApi\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "DigitalLibary.WebApi\\Controllers\\UserController.cs",
               "ToolTip": "C:\\BCTN\\thuvienso_v1\\Backend\\DigitalLibary\\DigitalLibary.WebApi\\Controllers\\UserController.cs",
               "RelativeToolTip": "DigitalLibary.WebApi\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAFMDAAAAAAAAAADgv2QDAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T15:09:33.083Z"
+              "WhenOpened": "2025-05-18T15:09:33.083Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "SendMail.cs",
               "DocumentMoniker": "C:\\BCTN\\thuvienso_v1\\Backend\\DigitalLibary\\DigitalLibary.WebApi\\Common\\SendMail.cs",
               "RelativeDocumentMoniker": "DigitalLibary.WebApi\\Common\\SendMail.cs",
@@ -58,24 +79,23 @@
               "RelativeToolTip": "DigitalLibary.WebApi\\Common\\SendMail.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAA+wC4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T14:58:30.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T14:58:30.463Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "AnalystController.cs",
               "DocumentMoniker": "C:\\BCTN\\thuvienso_v1\\Backend\\DigitalLibary\\DigitalLibary.WebApi\\Controllers\\AnalystController.cs",
               "RelativeDocumentMoniker": "DigitalLibary.WebApi\\Controllers\\AnalystController.cs",
               "ToolTip": "C:\\BCTN\\thuvienso_v1\\Backend\\DigitalLibary\\DigitalLibary.WebApi\\Controllers\\AnalystController.cs",
               "RelativeToolTip": "DigitalLibary.WebApi\\Controllers\\AnalystController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAEoPAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-10T01:32:36.681Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "DigitalLibary.WebApi",
               "DocumentMoniker": "C:\\BCTN\\thuvienso_v1\\Backend\\DigitalLibary\\DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj",
               "RelativeDocumentMoniker": "DigitalLibary.WebApi\\DigitalLibary.WebApi.csproj",
@@ -86,20 +106,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\BCTN\\thuvienso_v1\\Backend\\DigitalLibary\\DigitalLibary.WebApi\\appsettings.json",
               "RelativeDocumentMoniker": "DigitalLibary.WebApi\\appsettings.json",
               "ToolTip": "C:\\BCTN\\thuvienso_v1\\Backend\\DigitalLibary\\DigitalLibary.WebApi\\appsettings.json",
               "RelativeToolTip": "DigitalLibary.WebApi\\appsettings.json",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-09T02:14:34.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T02:14:34.574Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ContactAndIntroductionController.cs",
+              "DocumentMoniker": "C:\\BCTN\\thuvienso_v1\\Backend\\DigitalLibary\\DigitalLibary.WebApi\\Controllers\\ContactAndIntroductionController.cs",
+              "RelativeDocumentMoniker": "DigitalLibary.WebApi\\Controllers\\ContactAndIntroductionController.cs",
+              "ToolTip": "C:\\BCTN\\thuvienso_v1\\Backend\\DigitalLibary\\DigitalLibary.WebApi\\Controllers\\ContactAndIntroductionController.cs",
+              "RelativeToolTip": "DigitalLibary.WebApi\\Controllers\\ContactAndIntroductionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T18:48:39.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "DigitalLibary.Service",
               "DocumentMoniker": "C:\\BCTN\\thuvienso_v1\\Backend\\DigitalLibary\\DigitalLibary.Service\\DigitalLibary.Service.csproj",
               "RelativeDocumentMoniker": "DigitalLibary.Service\\DigitalLibary.Service.csproj",

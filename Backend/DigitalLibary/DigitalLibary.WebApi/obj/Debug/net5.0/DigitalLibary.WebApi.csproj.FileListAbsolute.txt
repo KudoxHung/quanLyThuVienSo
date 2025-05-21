@@ -357,3 +357,4 @@ C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0
 C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.pdb
 C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.genruntimeconfig.cache
 C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\ref\DigitalLibary.WebApi.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.WebApi\obj\Debug\net5.0\DigitalLibary.WebApi.sourcelink.json

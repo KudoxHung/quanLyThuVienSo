@@ -29,3 +29,4 @@ C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.Service\obj\Debug\net5.
 C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.Service\obj\Debug\net5.0\refint\DigitalLibary.Service.dll
 C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.Service\obj\Debug\net5.0\DigitalLibary.Service.pdb
 C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.Service\obj\Debug\net5.0\ref\DigitalLibary.Service.dll
+C:\BCTN\thuvienso_v1\Backend\DigitalLibary\DigitalLibary.Service\obj\Debug\net5.0\DigitalLibary.Service.sourcelink.json
